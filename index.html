@@ -1,13 +1,103 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--I Hamel Patel did this work on my own. Account for my codd and hithub is hpatel83-->
+<!--  case 1: hit1=no hit2=no hit3=no hit4=no | player 2 wins -->
+<!--  case 2: hit1=no hit2=no hit3=no hit4=yes  | cant hit 4 w/o 3, player 2 wins-->
+<!--  case 3: hit1=yes hit2=no hit3=no hit4=no  | player 2 wins , 1 busts -->
+<!--  case 4: hit1=yes hit2=no hit3=no hit4=yes | cant hit 4 w/o 3, player 2 wins , 1 busts -->
+<!--  case 5: hit1=yes hit2=yes hit3=no hit4=no  | player 3 wins, 1 and 2 bust -->
+<!--  case 6: hit1=yes hit2=yes hit3=no hit4=yes | cant hit 4 w/o 3, player 3 wins, 1 and 2 bust -->
+<!--  case 7: hit1=yes hit2=no hit3=yes hit4=no |  player 2 wins, 1 bust-->
+<!--  case 8: hit1=yes hit2=no hit3=yes hit4=yes | player 2 wins, 1 and 3 bust -->
+<!--  case 9: hit1=no hit2=yes hit3=no hit4=no  |  player 1 wins , 2 bust-->
+<!--  case 10: hit1=no hit2=yes hit3=no hit4=yes |cant hit 4 w/o 3, player 1 wins , 2 bust-->
+<!--  case 11: hit1=no hit2=no hit3=yes hit4=no|   player 3 wins,no bust -->
+<!--  case 12: hit1=no hit2=no hit3=yes hit4=yes|  player 2 wins, 3 bust-->
+<!--  case 13: hit1=no hit2=yes hit3=yes hit4=no | player 3 wins, 2 bust-->
+<!--  case 14: hit1=no hit2=yes hit3=yes hit4=yes | player 1 wins, 2 and 3 bust-->
+<!--  case 15: hit1=yes hit2=yes hit3=yes hit4=no | player 3 wins, 1 and 2 bust-->
+<!--  case 16: hit1=yes hit2=yes hit3=yes hit4=yes | no winner,1 and 2 and 3 wins-->
+<!--If a card is missing a border then you can do a 1px solid black border to the missing sides and it fixes it -->
 <head>
-    <title>Blackjack game!</title>
-    <meta charset="utf-8">
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+    <title>Blackjack</title>
 </head>
 <body>
-
-
-
+<h1>BlackJack</h1>
+<div>
+    <h2>Player 1</h2>
+    <table id="player1">
+        <tr>
+            <th>
+                <input type="checkbox" id="playingcards" name="hit1" value="cardhit">
+                <label for="playingcards">Hit</label>
+            </th>
+            <th><img alt="7 spades" src="7_spades.jpg"/></th>
+            <th><img alt="10 dimonds" src="10_dimonds.jpg"/></th>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="playingcards2" name="Stay" value="cardstay">
+                <label for="playingcards2">Stay</label>
+            </th>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>Player 2</h2>
+    <table id="player2">
+        <tr>
+            <th>
+                <input type="checkbox" id="playingcards3" name="hit2" value="cardhit">
+                <label for="playingcards3">Hit</label>
+            </th>
+            <th><img alt="jack dimonds" src="jack_dimonds.jpg"/></th>
+            <th><img alt="10 spades" src="10_spades.jpg"/></th>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="playingcards4" name="Stay" value="cardstay">
+                <label for="playingcards4">Stay</label>
+            </th>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>Player 3</h2>
+    <table id="player3">
+        <tr>
+            <th>
+                <input type="checkbox" id="playingcards5" name="hit3" value="cardhit">
+                <label for="playingcards5">Hit</label>
+            </th>
+            <th><img alt="5 hearts" src="5_hearts.jpg"/></th>
+            <th><img alt="7 hearts" src="7_hearts.jpg"/></th>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="playingcards6" name="hit4" value="cardhit">
+                <label for="playingcards6">Hit</label>
+                <!--hit button 3 needs to be on top of hit button 4 or the use cases dont work-->
+            </th>
+        <tr>
+            <th>
+                <input type="checkbox" id="playingcards7" name="Stay" value="cardstay">
+                <label for="playingcards7">Stay</label>
+            </th>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>Cards in Deck in order from Top to Bottom</h2>
+    <table id="deck">
+        <tr>
+            <th><img alt="9 spades" src="9_spades.jpg"/></th>
+            <th><img alt="6 hearts" src="6_hearts.jpg"/></th>
+            <th><img alt="7 dimonds" src="7_dimonds.jpg"/></th>
+            <th><img alt="8 hearts" src="7_hearts.jpg"/></th>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
