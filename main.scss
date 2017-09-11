@@ -456,7 +456,7 @@
 		height           : 100px;
 		background-color : gray;
 
-		$cards : two cloves, three cloves, four cloves, four hearts, five hearts, six diamonds, six hearts, seven diamonds, seven hearts, seven spades, eight diamonds, eight hearts, eight spades, nine diamonds, nine spades, ten diamonds, ten spades, jack diamonds, queen diamonds ,;
+		$cards : two cloves, three cloves, four cloves, four hearts, five hearts, six diamonds, six hearts, seven diamonds, seven hearts, seven spades, eight diamonds, eight hearts, eight spades, nine diamonds, nine spades, ten diamonds, ten spades, jack diamonds, queen diamonds;
 		@each $card in $cards {
 			$value : #{nth($card, 1)};
 			$suit : #{nth($card, 2)};
