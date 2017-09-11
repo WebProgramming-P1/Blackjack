@@ -10,7 +10,7 @@
 			 ~ #check-3:not(:checked) {
 				 ~ #check-4:checked {
 					 ~ #check-5:not(:checked) {
-						 ~ #check-6:checked {
+						 ~ #check-6:not(:checked) {
 							 ~ #check-7:checked {
 								 ~ .cards .card {
 									 &.spades {
@@ -33,21 +33,19 @@
 
 /*Case 2*/
 
-#check-1:checked {
-		~ #check-2:not(:checked) {
-			~ #check-3:checked {
-				~ #check-4:checked {
-					~ #check-5:checked {
-						~ #check-6:not(:checked) {
-							~ #check-7:not(:checked) {
-									~ .cards .card {
-										&.cloves {
-											background : orange none;
-										}
-										&.hearts {
-											background : green none;
-										}
-									}
+#check-1:not(:checked) {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
+			~ #check-4:checked {
+				~ #check-5:not(:checked) {
+					~ #check-6:checked {
+						~ #check-7:checked {
+							~ .cards .card {
+								&.spades {
+									background: darkseagreen none;
+								}
+								&.diamonds {
+									background: darkorange none;
 								}
 							}
 						}
@@ -55,6 +53,8 @@
 				}
 			}
 		}
+	}
+}
 
 
 /*----------------------------*/
@@ -62,18 +62,18 @@
 /*Case 3*/
 
 #check-1:checked {
-	~ #check-2:not(:checked) {
-		~ #check-3:checked {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
 			~ #check-4:checked {
-				~ #check-5:checked {
+				~ #check-5:not(:checked) {
 					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -83,24 +83,25 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
 /*Case 4*/
 
 #check-1:checked {
-	~ #check-2:not(:checked) {
-		~ #check-3:checked {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
 			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+				~ #check-5:not(:checked) {
+					~ #check-6:checked {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -110,6 +111,7 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
@@ -117,18 +119,18 @@
 /*Case 5*/
 
 #check-1:checked {
-	~ #check-2:not(:checked) {
+	~ #check-2:checked {
 		~ #check-3:checked {
 			~ #check-4:checked {
-				~ #check-5:checked {
+				~ #check-5:not(:checked) {
 					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -138,6 +140,7 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
@@ -145,18 +148,18 @@
 /*Case 6*/
 
 #check-1:checked {
-	~ #check-2:not(:checked) {
+	~ #check-2:checked {
 		~ #check-3:checked {
 			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+				~ #check-5:not(:checked) {
+					~ #check-6:checked {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -166,6 +169,7 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
@@ -173,18 +177,18 @@
 /*Case 7*/
 
 #check-1:checked {
-	~ #check-2:not(:checked) {
-		~ #check-3:checked {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
 			~ #check-4:checked {
 				~ #check-5:checked {
 					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -194,6 +198,7 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
@@ -201,18 +206,18 @@
 /*Case 8*/
 
 #check-1:checked {
-	~ #check-2:not(:checked) {
-		~ #check-3:checked {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
 			~ #check-4:checked {
 				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+					~ #check-6:checked {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -224,14 +229,15 @@
 }
 
 
+
 /*----------------------------*/
 /*Case 9*/
 #check-1:not(:checked) {
 	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
 				~ #check-5:not(:checked) {
-					~ #check-6:checked {
+					~ #check-6:not(:checked) {
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
@@ -254,19 +260,19 @@
 
 /*Case 10*/
 
-#check-1:checked {
-	~ #check-2:not(:checked) {
+#check-1:not(:checked) {
+	~ #check-2:checked {
 		~ #check-3:checked {
 			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+				~ #check-5:not(:checked) {
+					~ #check-6:checked {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -276,25 +282,26 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
 
 /*Case 11*/
 
-#check-1:checked {
-	~ #check-2:not(:checked) {
-		~ #check-3:checked {
+#check-1:not(:checked) {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
 			~ #check-4:checked {
 				~ #check-5:checked {
 					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -304,24 +311,25 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
 /*Case 12*/
 
-#check-1:checked {
-	~ #check-2:not(:checked) {
-		~ #check-3:checked {
+#check-1:not(:checked) {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
 			~ #check-4:checked {
-				~ #check-5:checked {
+				~ #check-5:not(:checked) {
 					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -331,25 +339,26 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
 
 /*Case 13*/
 
-#check-1:checked {
-	~ #check-2:not(:checked) {
-		~ #check-3:checked {
+#check-1:not(:checked) {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
 			~ #check-4:checked {
 				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+					~ #check-6:checked {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -359,25 +368,26 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
 
 /*Case 14*/
 
-#check-1:checked {
-	~ #check-2:not(:checked) {
+#check-1:not(:checked) {
+	~ #check-2:checked {
 		~ #check-3:checked {
 			~ #check-4:checked {
 				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+					~ #check-6:checked {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -387,6 +397,7 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
@@ -394,18 +405,18 @@
 /*Case 15*/
 
 #check-1:checked {
-	~ #check-2:not(:checked) {
+	~ #check-2:checked {
 		~ #check-3:checked {
 			~ #check-4:checked {
-				~ #check-5:checked {
+				~ #check-5:checked{
 					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -415,6 +426,7 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
@@ -422,18 +434,18 @@
 /*Case 16*/
 
 #check-1:checked {
-	~ #check-2:not(:checked) {
+	~ #check-2:checked {
 		~ #check-3:checked {
 			~ #check-4:checked {
 				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:not(:checked) {
+					~ #check-6:checked {
+						~ #check-7:checked {
 							~ .cards .card {
-								&.cloves {
-									background : orange none;
+								&.spades {
+									background: blue none;
 								}
-								&.hearts {
-									background : green none;
+								&.diamonds {
+									background: pink none;
 								}
 							}
 						}
@@ -443,6 +455,7 @@
 		}
 	}
 }
+
 
 
 /*----------------------------*/
