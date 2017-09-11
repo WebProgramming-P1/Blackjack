@@ -4,48 +4,42 @@
 	}
 }
 
-/*Case 3*/
+/*Case 1*/
+	 #check-1:not(:checked) {
+		 ~ #check-2:checked {
+			 ~ #check-3:not(:checked) {
+				 ~ #check-4:not(:checked) {
+					 ~ #check-5:not(:checked) {
+						 ~ #check-6:checked {
+							 ~ #check-7:checked {
+								 ~ .cards .card {
+									 &.spades {
+										 background: blue none;
+									 }
+									 &.diamonds {
+										 background: pink none;
+									 }
+								 }
+							 }
+						 }
+					 }
+				 }
+			 }
+		 }
+	 }
 
-#check-0:checked {
-	~ #check-1:not(:checked) {
-		~ #check-2:checked {
-			~ #check-3:not(:checked) {
-				~ #check-4:not(:checked) {
-					~ #check-5:not(:checked) {
-						~ #check-6:checked {
-							~ #check-7:checked {
-								~ #check-8:not(:checked) {
-									~ .cards .card {
-										&.spades {
-											background : blue none;
-										}
-										&.diamonds {
-											background : pink none;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
 
 /*----------------------------*/
 
 /*Case 2*/
 
-#check-0:checked {
-	~ #check-1:checked {
+#check-1:checked {
 		~ #check-2:not(:checked) {
 			~ #check-3:checked {
 				~ #check-4:checked {
 					~ #check-5:checked {
 						~ #check-6:not(:checked) {
 							~ #check-7:not(:checked) {
-								~ #check-8:checked {
 									~ .cards .card {
 										&.cloves {
 											background : orange none;
@@ -61,10 +55,398 @@
 				}
 			}
 		}
+
+
+/*----------------------------*/
+
+/*Case 3*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
+
 /*----------------------------*/
+/*Case 4*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 5*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 6*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 7*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 8*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+/*Case 9*/
+#check-1:not(:checked) {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
+			~ #check-4:not(:checked) {
+				~ #check-5:not(:checked) {
+					~ #check-6:checked {
+						~ #check-7:checked {
+							~ .cards .card {
+								&.spades {
+									background: blue none;
+								}
+								&.diamonds {
+									background: pink none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 10*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 11*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+/*Case 12*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 13*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 14*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 15*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
+/*Case 16*/
+
+#check-1:checked {
+	~ #check-2:not(:checked) {
+		~ #check-3:checked {
+			~ #check-4:checked {
+				~ #check-5:checked {
+					~ #check-6:not(:checked) {
+						~ #check-7:not(:checked) {
+							~ .cards .card {
+								&.cloves {
+									background : orange none;
+								}
+								&.hearts {
+									background : green none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------------------------*/
+
 
 /*Card Backgrounds*/
 .cards {
@@ -74,7 +456,7 @@
 		height           : 100px;
 		background-color : gray;
 
-		$cards : two cloves, three cloves, four cloves, four hearts, five hearts, six diamonds, six hearts, seven diamonds, seven hearts, seven spades, eight diamonds, eight hearts, eight spades, nine diamonds, nine spades, ten diamonds, ten spades;
+		$cards : two cloves, three cloves, four cloves, four hearts, five hearts, six diamonds, six hearts, seven diamonds, seven hearts, seven spades, eight diamonds, eight hearts, eight spades, nine diamonds, nine spades, ten diamonds, ten spades, jack dimonds, queen dimonds;
 		@each $card in $cards {
 			$value : #{nth($card, 1)};
 			$suit : #{nth($card, 2)};
