@@ -1,0 +1,44 @@
+body {
+    width: auto;
+    height: 600px;
+
+}
+
+#game-container {
+    border: 3px black solid;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+}
+
+#player1 {
+    border: 2px blue solid;
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+}
+
+#player2 {
+    border: 2px blue solid;
+    position: absolute;
+    left: 43%;
+    bottom: 90px;
+}
+
+#player3 {
+    border: 2px blue solid;
+    position: absolute;
+    bottom: 300px;
+    right: 0;
+}
+
+#info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.centered {
+    text-align: center;
+}

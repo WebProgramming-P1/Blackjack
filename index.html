@@ -22,14 +22,17 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <link href="index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="blackjack-view.css" />
     <title>Blackjack</title>
 </head>
-<body>
-<h1>BlackJack</h1>
+<body id="game-container">
+<div id="header" class="centered">
+    <h1>BlackJack</h1>
+</div>
     <a href="index2.html">Checkbox Example</a>
-<div>
+<div id="player1">
     <h2>Player 1</h2>
-    <table id="player1">
+    <table>
         <tr>
             <th>
                 <input type="checkbox" id="playingcards" name="hit1" value="cardhit">
@@ -47,9 +50,9 @@
         </tr>
     </table>
 </div>
-<div>
+<div id="player2">
     <h2>Player 2</h2>
-    <table id="player2">
+    <table>
         <tr>
             <th>
                 <input type="checkbox" id="playingcards3" name="hit2" value="cardhit">
@@ -67,9 +70,9 @@
         </tr>
     </table>
 </div>
-<div>
+<div id="player3">
     <h2>Player 3</h2>
-    <table id="player3">
+    <table>
         <tr>
             <th>
                 <input type="checkbox" id="playingcards5" name="hit3" value="cardhit">
@@ -94,7 +97,7 @@
         </tr>
     </table>
 </div>
-<div>
+<div id="info">
     <h2>Cards in Deck in order from Top to Bottom</h2>
     <table id="deck">
         <tr>
