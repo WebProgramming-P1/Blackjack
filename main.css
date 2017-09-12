@@ -105,5 +105,7 @@
 .cards .card.queen.diamonds {
 	background-image : url("card_imgs/queen_diamonds.jpg");
 }
-
+.cards .card.white.card {
+    background-image : url("card_imgs/white_card.jpg");
+}
 /*# sourceMappingURL=main.css.map */
