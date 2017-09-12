@@ -1,5 +1,9 @@
 @import "variables";
 
+@function toMs($value) {
+	@return #{$value}ms
+}
+
 #start:checked {
 
 }
@@ -19,20 +23,23 @@ label[for=start] {
 	top           : 0;
 	right         : 0;
 	position      : absolute;
-
-	//transition    : top 0s ease 1s, opacity 1s ease 0s;
 }
 
 .cards {
-	width         : 100vw;
-	text-align    : center;
-	padding-right : 10%;
+	//width         : 100vw;
+	text-align : center;
+	margin     : auto;
 
 	.card {
+		$cardWidth : 100px;
+
 		display          : inline-block;
 		position         : absolute;
-		//margin: -40px;
 		transform-origin : 75% 0;
+		top              : 10vh;
+		width            : $cardWidth;
+		height           : 145px;
+		margin-left      : $cardWidth / -2;
 	}
 }
 
@@ -57,25 +64,39 @@ label[for=start] {
 
 	&:checked {
 		~ {
+			$card-anim-1-duration : 1000;
+			$card-anim-2-duration : 1000;
+
 			*, .cards .card {
 				opacity                    : 1;
 				transition-property        : opacity, top, transform;
 				transition-timing-function : ease;
-				transition-duration        : 1s;
+				transition-duration        : toMs($card-anim-1-duration);
 			}
 			label[for=start] {
-				transition : top 0s ease 1s, opacity 1s ease 0s;
+				transition : top 0s ease toMs($card-anim-1-duration), opacity toMs($card-anim-1-duration) ease 0s;
 			}
 
 			$delay : 0;
+			$delayIncrement : 400;
 			@each $card in $cards {
 				$value : #{nth($card, 1)};
 				$suit : #{nth($card, 2)};
 				.cards .card.#{$value}.#{$suit} {
-					transform        : rotateZ(#{$deg}deg);
+					transform       : rotateZ(#{$deg}deg);
+					animation-delay : toMs($card-anim-1-duration + $delay);
 				}
 
+				$delay : $delay + $delayIncrement;
 				$deg : $deg + $degIncrement;
+			}
+
+			.cards .card {
+				//animation           : deal 1s;
+				animation-name      : deal;
+				animation-duration  : toMs($card-anim-2-duration);
+				animation-fill-mode : forwards;
+				//animation-delay     : $card-anim-1-duration;
 			}
 
 			label[for=start] {
@@ -83,5 +104,14 @@ label[for=start] {
 				top     : -1000%;
 			}
 		}
+	}
+}
+
+@keyframes deal {
+	0% {
+		//top : 0;
+	}
+	100% {
+		top : 50vh;
 	}
 }

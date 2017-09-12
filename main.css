@@ -15,13 +15,16 @@ label[for=start] {
   position: absolute; }
 
 .cards {
-  width: 100vw;
   text-align: center;
-  padding-right: 10%; }
+  margin: auto; }
   .cards .card {
     display: inline-block;
     position: absolute;
-    transform-origin: 75% 0; }
+    transform-origin: 75% 0;
+    top: 10vh;
+    width: 100px;
+    height: 145px;
+    margin-left: -50px; }
 
 #start {
   opacity: 0; }
@@ -35,53 +38,80 @@ label[for=start] {
     opacity: 1;
     transition-property: opacity, top, transform;
     transition-timing-function: ease;
-    transition-duration: 1s; }
+    transition-duration: 1000ms; }
   #start:checked ~ label[for=start] {
-    transition: top 0s ease 1s, opacity 1s ease 0s; }
+    transition: top 0s ease 1000ms, opacity 1000ms ease 0s; }
   #start:checked ~ .cards .card.two.cloves {
-    transform: rotateZ(-30deg); }
+    transform: rotateZ(-30deg);
+    animation-delay: 1000ms; }
   #start:checked ~ .cards .card.three.cloves {
-    transform: rotateZ(-27deg); }
+    transform: rotateZ(-27deg);
+    animation-delay: 1400ms; }
   #start:checked ~ .cards .card.four.cloves {
-    transform: rotateZ(-24deg); }
+    transform: rotateZ(-24deg);
+    animation-delay: 1800ms; }
   #start:checked ~ .cards .card.four.hearts {
-    transform: rotateZ(-21deg); }
+    transform: rotateZ(-21deg);
+    animation-delay: 2200ms; }
   #start:checked ~ .cards .card.five.hearts {
-    transform: rotateZ(-18deg); }
+    transform: rotateZ(-18deg);
+    animation-delay: 2600ms; }
   #start:checked ~ .cards .card.six.diamonds {
-    transform: rotateZ(-15deg); }
+    transform: rotateZ(-15deg);
+    animation-delay: 3000ms; }
   #start:checked ~ .cards .card.six.hearts {
-    transform: rotateZ(-12deg); }
+    transform: rotateZ(-12deg);
+    animation-delay: 3400ms; }
   #start:checked ~ .cards .card.seven.diamonds {
-    transform: rotateZ(-9deg); }
+    transform: rotateZ(-9deg);
+    animation-delay: 3800ms; }
   #start:checked ~ .cards .card.seven.hearts {
-    transform: rotateZ(-6deg); }
+    transform: rotateZ(-6deg);
+    animation-delay: 4200ms; }
   #start:checked ~ .cards .card.seven.spades {
-    transform: rotateZ(-3deg); }
+    transform: rotateZ(-3deg);
+    animation-delay: 4600ms; }
   #start:checked ~ .cards .card.eight.diamonds {
-    transform: rotateZ(0deg); }
+    transform: rotateZ(0deg);
+    animation-delay: 5000ms; }
   #start:checked ~ .cards .card.eight.hearts {
-    transform: rotateZ(3deg); }
+    transform: rotateZ(3deg);
+    animation-delay: 5400ms; }
   #start:checked ~ .cards .card.eight.spades {
-    transform: rotateZ(6deg); }
+    transform: rotateZ(6deg);
+    animation-delay: 5800ms; }
   #start:checked ~ .cards .card.nine.diamonds {
-    transform: rotateZ(9deg); }
+    transform: rotateZ(9deg);
+    animation-delay: 6200ms; }
   #start:checked ~ .cards .card.nine.spades {
-    transform: rotateZ(12deg); }
+    transform: rotateZ(12deg);
+    animation-delay: 6600ms; }
   #start:checked ~ .cards .card.ten.diamonds {
-    transform: rotateZ(15deg); }
+    transform: rotateZ(15deg);
+    animation-delay: 7000ms; }
   #start:checked ~ .cards .card.ten.spades {
-    transform: rotateZ(18deg); }
+    transform: rotateZ(18deg);
+    animation-delay: 7400ms; }
   #start:checked ~ .cards .card.jack.diamonds {
-    transform: rotateZ(21deg); }
+    transform: rotateZ(21deg);
+    animation-delay: 7800ms; }
   #start:checked ~ .cards .card.queen.diamonds {
-    transform: rotateZ(24deg); }
+    transform: rotateZ(24deg);
+    animation-delay: 8200ms; }
   #start:checked ~ .cards .card.white.card {
-    transform: rotateZ(27deg); }
+    transform: rotateZ(27deg);
+    animation-delay: 8600ms; }
+  #start:checked ~ .cards .card {
+    animation-name: deal;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards; }
   #start:checked ~ label[for=start] {
     opacity: 0;
     top: -1000%; }
 
+@keyframes deal {
+  100% {
+    top: 50vh; } }
 .chk-button:checked {
   visibility: hidden; }
 
@@ -198,48 +228,45 @@ label[for=start] {
 
 /*----------------------------*/
 /*Card Backgrounds*/
-.cards .card {
-  width: 100px;
-  height: 145px; }
-  .cards .card.two.cloves {
-    background-image: url("card_imgs/two_cloves.jpg"); }
-  .cards .card.three.cloves {
-    background-image: url("card_imgs/three_cloves.jpg"); }
-  .cards .card.four.cloves {
-    background-image: url("card_imgs/four_cloves.jpg"); }
-  .cards .card.four.hearts {
-    background-image: url("card_imgs/four_hearts.jpg"); }
-  .cards .card.five.hearts {
-    background-image: url("card_imgs/five_hearts.jpg"); }
-  .cards .card.six.diamonds {
-    background-image: url("card_imgs/six_diamonds.jpg"); }
-  .cards .card.six.hearts {
-    background-image: url("card_imgs/six_hearts.jpg"); }
-  .cards .card.seven.diamonds {
-    background-image: url("card_imgs/seven_diamonds.jpg"); }
-  .cards .card.seven.hearts {
-    background-image: url("card_imgs/seven_hearts.jpg"); }
-  .cards .card.seven.spades {
-    background-image: url("card_imgs/seven_spades.jpg"); }
-  .cards .card.eight.diamonds {
-    background-image: url("card_imgs/eight_diamonds.jpg"); }
-  .cards .card.eight.hearts {
-    background-image: url("card_imgs/eight_hearts.jpg"); }
-  .cards .card.eight.spades {
-    background-image: url("card_imgs/eight_spades.jpg"); }
-  .cards .card.nine.diamonds {
-    background-image: url("card_imgs/nine_diamonds.jpg"); }
-  .cards .card.nine.spades {
-    background-image: url("card_imgs/nine_spades.jpg"); }
-  .cards .card.ten.diamonds {
-    background-image: url("card_imgs/ten_diamonds.jpg"); }
-  .cards .card.ten.spades {
-    background-image: url("card_imgs/ten_spades.jpg"); }
-  .cards .card.jack.diamonds {
-    background-image: url("card_imgs/jack_diamonds.jpg"); }
-  .cards .card.queen.diamonds {
-    background-image: url("card_imgs/queen_diamonds.jpg"); }
-  .cards .card.white.card {
-    background-image: url("card_imgs/white_card.jpg"); }
+.cards .card.two.cloves {
+  background-image: url("card_imgs/two_cloves.jpg"); }
+.cards .card.three.cloves {
+  background-image: url("card_imgs/three_cloves.jpg"); }
+.cards .card.four.cloves {
+  background-image: url("card_imgs/four_cloves.jpg"); }
+.cards .card.four.hearts {
+  background-image: url("card_imgs/four_hearts.jpg"); }
+.cards .card.five.hearts {
+  background-image: url("card_imgs/five_hearts.jpg"); }
+.cards .card.six.diamonds {
+  background-image: url("card_imgs/six_diamonds.jpg"); }
+.cards .card.six.hearts {
+  background-image: url("card_imgs/six_hearts.jpg"); }
+.cards .card.seven.diamonds {
+  background-image: url("card_imgs/seven_diamonds.jpg"); }
+.cards .card.seven.hearts {
+  background-image: url("card_imgs/seven_hearts.jpg"); }
+.cards .card.seven.spades {
+  background-image: url("card_imgs/seven_spades.jpg"); }
+.cards .card.eight.diamonds {
+  background-image: url("card_imgs/eight_diamonds.jpg"); }
+.cards .card.eight.hearts {
+  background-image: url("card_imgs/eight_hearts.jpg"); }
+.cards .card.eight.spades {
+  background-image: url("card_imgs/eight_spades.jpg"); }
+.cards .card.nine.diamonds {
+  background-image: url("card_imgs/nine_diamonds.jpg"); }
+.cards .card.nine.spades {
+  background-image: url("card_imgs/nine_spades.jpg"); }
+.cards .card.ten.diamonds {
+  background-image: url("card_imgs/ten_diamonds.jpg"); }
+.cards .card.ten.spades {
+  background-image: url("card_imgs/ten_spades.jpg"); }
+.cards .card.jack.diamonds {
+  background-image: url("card_imgs/jack_diamonds.jpg"); }
+.cards .card.queen.diamonds {
+  background-image: url("card_imgs/queen_diamonds.jpg"); }
+.cards .card.white.card {
+  background-image: url("card_imgs/white_card.jpg"); }
 
 /*# sourceMappingURL=main.css.map */

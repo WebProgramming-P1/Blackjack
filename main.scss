@@ -437,9 +437,6 @@
 /*Card Backgrounds*/
 .cards {
 	.card {
-		width  : 100px;
-		height : 145px;
-
 		@each $card in $cards {
 			$value : #{nth($card, 1)};
 			$suit : #{nth($card, 2)};
