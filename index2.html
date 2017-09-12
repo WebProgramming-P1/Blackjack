@@ -25,36 +25,29 @@
     <title>Blackjack</title>
 </head>
 <body>
+    <br />
     <h1>BlackJack</h1>
-    <input type="checkbox" id="check-1" class="chk-button player2" />Hit
-    <input type="checkbox" id="check-2" class="chk-button player3" />Stay
-    <input type="checkbox" id="check-3" class="chk-button player1" />Hit
-    <input type="checkbox" id="check-4" class="chk-button player2" />Stay
-    <input type="checkbox" id="check-5" class="chk-button player3" />Hit
-    <input type="checkbox" id="check-6" class="chk-button player1" />Hit
-    <input type="checkbox" id="check-7" class="chk-button player2" />Stay
+    <input type="checkbox" id="start" />
+    <label for="start">Start</label>
 
-    <hr />
-    <input type="checkbox" disabled="true" checked/>
-    <input type="checkbox" disabled="true"/>
-    <input type="checkbox" disabled="true" checked/>
-    <input type="checkbox" disabled="true"/>
-    <input type="checkbox" disabled="true"/>
-    <input type="checkbox" disabled="true"/>
-    <input type="checkbox" disabled="true" checked/>
-    <input type="checkbox" disabled="true" checked/>
-    <input type="checkbox" disabled="true"/>
-    <hr />
-    <input type="checkbox" disabled="true" checked/>
-    <input type="checkbox" disabled="true" checked/>
-    <input type="checkbox" disabled="true"/>
-    <input type="checkbox" disabled="true" checked/>
-    <input type="checkbox" disabled="true" checked/>
-    <input type="checkbox" disabled="true" checked/>
-    <input type="checkbox" disabled="true"/>
-    <input type="checkbox" disabled="true"/>
-    <input type="checkbox" disabled="true" checked/>
-    <hr />
+
+    <!--Style the labels, leave the checkboxes alone. They will get checked when you click the label. See the start button-->
+    <label for="check-1">Hit</label>
+    <label for="check-2">Stay</label>
+    <label for="check-3">Hit</label>
+    <label for="check-4">Stay</label>
+    <label for="check-5">Hit</label>
+    <label for="check-6">Hit</label>
+    <label for="check-7">Stay</label>
+
+    <!--Style the labels, leave the checkboxes alone. They will get checked when you click the label. See the start button-->
+    <input type="checkbox" id="check-1" class="chk-button player2" />
+    <input type="checkbox" id="check-2" class="chk-button player3" />
+    <input type="checkbox" id="check-3" class="chk-button player1" />
+    <input type="checkbox" id="check-4" class="chk-button player2" />
+    <input type="checkbox" id="check-5" class="chk-button player3" />
+    <input type="checkbox" id="check-6" class="chk-button player1" />
+    <input type="checkbox" id="check-7" class="chk-button player2" />
 
     <div class="cards">
         <div class="card two cloves"></div>
@@ -67,6 +60,7 @@
         <div class="card seven diamonds"></div>
         <div class="card seven hearts"></div>
         <div class="card seven spades"></div>
+        <div class="card eight diamonds"></div>
         <div class="card eight hearts"></div>
         <div class="card eight spades"></div>
         <div class="card nine diamonds"></div>
@@ -75,12 +69,7 @@
         <div class="card ten spades"></div>
         <div class="card jack diamonds"></div>
         <div class="card queen diamonds"></div>
-        <div class="card white card"></div>
-    </div>
-    <div class="cards">
-        <div class="card two cloves"></div>
-        <div class="card three cloves"></div>
-        <div class="card four cloves"></div>
+        <!--<div class="card white card"></div>-->
     </div>
 </body>
 </html>

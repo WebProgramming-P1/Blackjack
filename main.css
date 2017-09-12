@@ -1,111 +1,414 @@
+label[for=start] {
+  padding: 10px 20px;
+  background: #AE705E;
+  border-radius: 5px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  color: #FFFFFF;
+  float: right;
+  margin: 50px;
+  top: 0;
+  right: 0;
+  position: absolute; }
+
+.cards {
+  width: 100vw;
+  text-align: center;
+  margin: auto; }
+  .cards .card {
+    display: inline-block;
+    position: absolute;
+    transform-origin: 75% 0;
+    top: 10vh;
+    left: 50vw;
+    width: 100px;
+    height: 145px;
+    margin-left: -100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+#start {
+  opacity: 0; }
+  #start:not(:checked) ~ *, #start:not(:checked) ~ .cards .card {
+    opacity: 0; }
+  #start:not(:checked) ~ .cards .card {
+    transform: rotateZ(-30deg); }
+  #start:not(:checked) ~ label[for=start] {
+    opacity: 1; }
+  #start:checked ~ *, #start:checked ~ .cards .card {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1000ms; }
+  #start:checked ~ label[for=start] {
+    transition: all 1s ease 0s, top 0s ease 1000ms, opacity 1000ms ease 0s; }
+  #start:checked ~ .cards .card.two.cloves {
+    transform: rotateZ(-30deg);
+    animation-name: deal-two-cloves;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms; }
+    #start:checked ~ .cards .card.two.cloves:hover {
+      margin-left: -130px; }
+@keyframes deal-two-cloves {
+  100% {
+    left: 90vw;
+    top: 50vh;
+    transform: rotateZ(80deg); } }
+  #start:checked ~ .cards .card.three.cloves {
+    transform: rotateZ(-27deg);
+    animation-name: deal-three-cloves;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1400ms; }
+    #start:checked ~ .cards .card.three.cloves:hover {
+      margin-top: -30px; }
+@keyframes deal-three-cloves {
+  100% {
+    left: 50vw;
+    top: 90vh;
+    transform: rotateZ(173deg); } }
+  #start:checked ~ .cards .card.four.cloves {
+    transform: rotateZ(-24deg);
+    animation-name: deal-four-cloves;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1800ms; }
+    #start:checked ~ .cards .card.four.cloves:hover {
+      margin-left: -70px; }
+@keyframes deal-four-cloves {
+  100% {
+    left: 10vw;
+    top: 50vh;
+    transform: rotateZ(266deg); } }
+  #start:checked ~ .cards .card.four.hearts {
+    transform: rotateZ(-21deg);
+    animation-name: deal-four-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2200ms; }
+    #start:checked ~ .cards .card.four.hearts:hover {
+      margin-left: -130px; }
+@keyframes deal-four-hearts {
+  100% {
+    left: 90vw;
+    top: 50vh;
+    transform: rotateZ(89deg); } }
+  #start:checked ~ .cards .card.five.hearts {
+    transform: rotateZ(-18deg);
+    animation-name: deal-five-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2600ms; }
+    #start:checked ~ .cards .card.five.hearts:hover {
+      margin-top: -30px; }
+@keyframes deal-five-hearts {
+  100% {
+    left: 50vw;
+    top: 90vh;
+    transform: rotateZ(182deg); } }
+  #start:checked ~ .cards .card.six.diamonds {
+    transform: rotateZ(-15deg);
+    animation-name: deal-six-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3000ms; }
+    #start:checked ~ .cards .card.six.diamonds:hover {
+      margin-left: -70px; }
+@keyframes deal-six-diamonds {
+  100% {
+    left: 10vw;
+    top: 50vh;
+    transform: rotateZ(275deg); } }
+  #start:checked ~ .cards .card.six.hearts {
+    transform: rotateZ(-12deg);
+    animation-name: deal-six-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-six-hearts {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.seven.diamonds {
+    transform: rotateZ(-9deg);
+    animation-name: deal-seven-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-seven-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.seven.hearts {
+    transform: rotateZ(-6deg);
+    animation-name: deal-seven-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-seven-hearts {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.seven.spades {
+    transform: rotateZ(-3deg);
+    animation-name: deal-seven-spades;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-seven-spades {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.eight.diamonds {
+    transform: rotateZ(0deg);
+    animation-name: deal-eight-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-eight-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.eight.hearts {
+    transform: rotateZ(3deg);
+    animation-name: deal-eight-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-eight-hearts {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.eight.spades {
+    transform: rotateZ(6deg);
+    animation-name: deal-eight-spades;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-eight-spades {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.nine.diamonds {
+    transform: rotateZ(9deg);
+    animation-name: deal-nine-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-nine-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.nine.spades {
+    transform: rotateZ(12deg);
+    animation-name: deal-nine-spades;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-nine-spades {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.ten.diamonds {
+    transform: rotateZ(15deg);
+    animation-name: deal-ten-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-ten-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.ten.spades {
+    transform: rotateZ(18deg);
+    animation-name: deal-ten-spades;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-ten-spades {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.jack.diamonds {
+    transform: rotateZ(21deg);
+    animation-name: deal-jack-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-jack-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.queen.diamonds {
+    transform: rotateZ(24deg);
+    animation-name: deal-queen-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-queen-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ .cards .card.white.card {
+    transform: rotateZ(27deg);
+    animation-name: deal-white-card;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-white-card {
+  100% {
+    transform: rotateZ(0deg); } }
+  #start:checked ~ label[for=start] {
+    opacity: 0;
+    top: -1000%; }
+
 .chk-button:checked {
-    visibility: hidden;
-}
+  visibility: hidden; }
 
-/*Case 1s*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.two.cloves {
-	background-image : url("card_imgs/nine_diamonds.jpg");
-}
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
-	background : pink none;
-}
+/*Case 1*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
+  background-image: url("card_imgs/nine_diamonds.jpg"); }
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
 
 /*----------------------------*/
 /*Case 2*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.cloves {
-	background : orange none;
-}
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
+  background: darkseagreen none; }
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
+  background: darkorange none; }
 
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.hearts {
-	background : green none;
-}
+/*----------------------------*/
+/*Case 3*/
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 4*/
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 5*/
+#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 6*/
+#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 7*/
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 8*/
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 9*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 10*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 11*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 12*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 13*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 14*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 15*/
+#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
+
+/*----------------------------*/
+/*Case 16*/
+#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
+  background: blue none; }
+#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
+  background: pink none; }
 
 /*----------------------------*/
 /*Card Backgrounds*/
-.cards .card {
-	display          : inline-block;
-	width            : 50px;
-	height           : 100px;
-	background-color : gray;
-}
-
 .cards .card.two.cloves {
-	background-image : url("card_imgs/two_cloves.jpg");
-}
-
+  background-image: url("card_imgs/two_cloves.jpg"); }
 .cards .card.three.cloves {
-	background-image : url("card_imgs/three_cloves.jpg");
-}
-
+  background-image: url("card_imgs/three_cloves.jpg"); }
 .cards .card.four.cloves {
-	background-image : url("card_imgs/four_cloves.jpg");
-}
-
+  background-image: url("card_imgs/four_cloves.jpg"); }
 .cards .card.four.hearts {
-	background-image : url("card_imgs/four_hearts.jpg");
-}
-
+  background-image: url("card_imgs/four_hearts.jpg"); }
 .cards .card.five.hearts {
-	background-image : url("card_imgs/five_hearts.jpg");
-}
-
+  background-image: url("card_imgs/five_hearts.jpg"); }
 .cards .card.six.diamonds {
-	background-image : url("card_imgs/six_diamonds.jpg");
-}
-
+  background-image: url("card_imgs/six_diamonds.jpg"); }
 .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
+  background-image: url("card_imgs/six_hearts.jpg"); }
 .cards .card.seven.diamonds {
-	background-image : url("card_imgs/seven_diamonds.jpg");
-}
-
+  background-image: url("card_imgs/seven_diamonds.jpg"); }
 .cards .card.seven.hearts {
-	background-image : url("card_imgs/seven_hearts.jpg");
-}
-
+  background-image: url("card_imgs/seven_hearts.jpg"); }
 .cards .card.seven.spades {
-	background-image : url("card_imgs/seven_spades.jpg");
-}
-
+  background-image: url("card_imgs/seven_spades.jpg"); }
 .cards .card.eight.diamonds {
-	background-image : url("card_imgs/eight_diamonds.jpg");
-}
-
+  background-image: url("card_imgs/eight_diamonds.jpg"); }
 .cards .card.eight.hearts {
-	background-image : url("card_imgs/eight_hearts.jpg");
-}
-
+  background-image: url("card_imgs/eight_hearts.jpg"); }
 .cards .card.eight.spades {
-	background-image : url("card_imgs/eight_spades.jpg");
-}
-
+  background-image: url("card_imgs/eight_spades.jpg"); }
 .cards .card.nine.diamonds {
-	background-image : url("card_imgs/nine_diamonds.jpg");
-}
-
+  background-image: url("card_imgs/nine_diamonds.jpg"); }
 .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
+  background-image: url("card_imgs/nine_spades.jpg"); }
 .cards .card.ten.diamonds {
-	background-image : url("card_imgs/ten_diamonds.jpg");
-}
-
+  background-image: url("card_imgs/ten_diamonds.jpg"); }
 .cards .card.ten.spades {
-	background-image : url("card_imgs/ten_spades.jpg");
-}
-
+  background-image: url("card_imgs/ten_spades.jpg"); }
 .cards .card.jack.diamonds {
-	background-image : url("card_imgs/jack_diamonds.jpg");
-}
-
+  background-image: url("card_imgs/jack_diamonds.jpg"); }
 .cards .card.queen.diamonds {
-	background-image : url("card_imgs/queen_diamonds.jpg");
-}
+  background-image: url("card_imgs/queen_diamonds.jpg"); }
 .cards .card.white.card {
-    background-image : url("card_imgs/white_card.jpg");
-}
+  background-image: url("card_imgs/white_card.jpg"); }
+
 /*# sourceMappingURL=main.css.map */

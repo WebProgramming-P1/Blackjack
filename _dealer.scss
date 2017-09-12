@@ -1,0 +1,175 @@
+@import "variables";
+
+@function toMs($value) {
+	@return #{$value}ms
+}
+
+$deckRotationOffset : 20;
+
+@mixin rightDeck($deg) {
+	left      : 90vw;
+	top       : 50vh;
+	transform : rotateZ(#{$deg + 90 + $deckRotationOffset}deg);
+	//margin-left : -$cardWidth / 2;
+}
+
+@mixin bottomDeck($deg) {
+	left      : 50vw;
+	top       : 90vh;
+	transform : rotateZ(#{$deg + 180 + $deckRotationOffset}deg);
+}
+
+@mixin leftDeck($deg) {
+	left      : 10vw;
+	top       : 50vh;
+	transform : rotateZ(#{$deg + 270 + $deckRotationOffset}deg);
+}
+
+#start:checked {
+
+}
+
+label[for=start] {
+	padding       : 10px 20px;
+	background    : #AE705E;
+	border-radius : 5px;
+	width         : 50px;
+	height        : 20px;
+	text-align    : center;
+	display       : inline-block;
+	font-weight   : bold;
+	color         : #FFFFFF;
+	float         : right;
+	margin        : 50px;
+	top           : 0;
+	right         : 0;
+	position      : absolute;
+}
+
+.cards {
+	width      : 100vw;
+	text-align : center;
+	margin     : auto;
+
+	.card {
+		display             : inline-block;
+		position            : absolute;
+		transform-origin    : 75% 0;
+		top                 : 10vh;
+		left                : 50vw;
+		width               : $cardWidth;
+		height              : $cardHeight;
+		margin-left         : -$cardWidth;
+
+		background-position : center;
+		background-repeat   : no-repeat;
+		background-size     : cover;
+
+		&:hover {
+			//width         : $cardWidth * 1.1;
+			//height        : $cardHeight * 1.1;
+		}
+	}
+}
+
+#start {
+	$targetDeg : 180 * 1 / 3;
+	$degIncrement : $targetDeg / length($cards);
+	$deg : $targetDeg / -2;
+
+	opacity : 0;
+
+	&:not(:checked) ~ {
+		*, .cards .card {
+			opacity : 0;
+		}
+		.cards .card {
+			transform : rotateZ(#{$deg}deg);
+		}
+		label[for=start] {
+			opacity : 1;
+		}
+	}
+
+	&:checked {
+		~ {
+			$card-anim-1-duration : 1000;
+			$card-anim-2-duration : 1000;
+
+			*, .cards .card {
+				opacity                    : 1;
+				transition-property        : all;
+				transition-timing-function : ease;
+				transition-duration        : toMs($card-anim-1-duration);
+			}
+			label[for=start] {
+				transition : all 1s ease 0s, top 0s ease toMs($card-anim-1-duration), opacity toMs($card-anim-1-duration) ease 0s;
+			}
+
+			$delay : 0;
+			$delayIncrement : 400;
+			$index : 0;
+			@each $card in $cards {
+				$value : #{nth($card, 1)};
+				$suit : #{nth($card, 2)};
+				.cards .card.#{$value}.#{$suit} {
+					transform           : rotateZ(#{$deg}deg);
+					animation-name      : deal-#{$value}-#{$suit};
+					animation-duration  : toMs($card-anim-2-duration);
+					animation-fill-mode : forwards;
+
+					@if ($index < 6) {
+						animation-delay : toMs($card-anim-1-duration + $delay);
+						@if ($index % 3 == 0) {
+							// Right
+							&:hover {
+								margin-left : -$cardWidth - 30px;
+							}
+						} @else if ($index % 3 == 1) {
+							// Bottom
+							&:hover {
+								margin-top : -30px;
+							}
+						} @else if ($index % 3 == 2) {
+							// Left
+							&:hover {
+								margin-left : (-$cardWidth + 30px);
+							}
+						}
+					} @else {
+						$delayIncrement : 0;
+						animation-delay : toMs($card-anim-1-duration + $delay);
+					}
+				}
+
+				@keyframes deal-#{$value}-#{$suit} {
+					100% {
+						@if ($index < 6) {
+							@if ($index % 3 == 0) {
+								// Right
+								@include rightDeck($deg);
+							} @else if ($index % 3 == 1) {
+								// Bottom
+								@include bottomDeck($deg);
+							} @else if ($index % 3 == 2) {
+								// Left
+								@include leftDeck($deg);
+							}
+						} @else {
+							transform : rotateZ(0deg);
+						}
+					}
+				}
+
+				$delay : $delay + $delayIncrement;
+				$deg : $deg + $degIncrement;
+				$index : $index + 1;
+			}
+
+			label[for=start] {
+				opacity : 0;
+				top     : -1000%;
+			}
+		}
+	}
+}
