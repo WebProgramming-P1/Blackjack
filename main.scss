@@ -437,10 +437,8 @@
 /*Card Backgrounds*/
 .cards {
 	.card {
-		display          : inline-block;
-		width            : 100px;
-		height           : 145px;
-		background-color : gray;
+		width  : 100px;
+		height : 145px;
 
 		@each $card in $cards {
 			$value : #{nth($card, 1)};
