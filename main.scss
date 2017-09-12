@@ -5,29 +5,28 @@
 }
 
 /*Case 1*/
-	 #check-1:not(:checked) {
-		 ~ #check-2:checked {
-			 ~ #check-3:not(:checked) {
-				 ~ #check-4:checked {
-					 ~ #check-5:not(:checked) {
-						 ~ #check-6:not(:checked) {
-							 ~ #check-7:checked {
-								 ~ .cards .card {
-									 &.spades {
-										 background-image: url("card_imgs/nine_diamonds.jpg");
-									 }
-									 &.diamonds {
-										 background: pink none;
-									 }
-								 }
-							 }
-						 }
-					 }
-				 }
-			 }
-		 }
-	 }
-
+#check-1:not(:checked) {
+	~ #check-2:checked {
+		~ #check-3:not(:checked) {
+			~ #check-4:checked {
+				~ #check-5:not(:checked) {
+					~ #check-6:not(:checked) {
+						~ #check-7:checked {
+							~ .cards .card {
+								&.spades {
+									background-image : url("card_imgs/nine_diamonds.jpg");
+								}
+								&.diamonds {
+									background : pink none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 /*----------------------------*/
 
@@ -42,10 +41,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: darkseagreen none;
+									background : darkseagreen none;
 								}
 								&.diamonds {
-									background: darkorange none;
+									background : darkorange none;
 								}
 							}
 						}
@@ -55,7 +54,6 @@
 		}
 	}
 }
-
 
 /*----------------------------*/
 
@@ -70,10 +68,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -83,8 +81,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 /*Case 4*/
@@ -98,10 +94,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -111,8 +107,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 
@@ -127,10 +121,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -140,8 +134,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 
@@ -156,10 +148,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -169,8 +161,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 
@@ -185,10 +175,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -198,8 +188,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 
@@ -214,10 +202,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -227,8 +215,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 /*Case 9*/
@@ -241,10 +227,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -254,7 +240,6 @@
 		}
 	}
 }
-
 
 /*----------------------------*/
 
@@ -269,10 +254,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -282,8 +267,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 
@@ -298,10 +281,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -311,8 +294,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 /*Case 12*/
@@ -326,10 +307,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -339,8 +320,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 
@@ -355,10 +334,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -368,8 +347,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 
@@ -384,10 +361,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -397,8 +374,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 
@@ -408,15 +383,15 @@
 	~ #check-2:checked {
 		~ #check-3:checked {
 			~ #check-4:checked {
-				~ #check-5:checked{
+				~ #check-5:checked {
 					~ #check-6:not(:checked) {
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -426,8 +401,6 @@
 		}
 	}
 }
-
-
 
 /*----------------------------*/
 
@@ -442,10 +415,10 @@
 						~ #check-7:checked {
 							~ .cards .card {
 								&.spades {
-									background: blue none;
+									background : blue none;
 								}
 								&.diamonds {
-									background: pink none;
+									background : pink none;
 								}
 							}
 						}
@@ -456,10 +429,7 @@
 	}
 }
 
-
-
 /*----------------------------*/
-
 
 /*Card Backgrounds*/
 .cards {
