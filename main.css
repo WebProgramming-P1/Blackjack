@@ -1,3 +1,138 @@
+label[for=start] {
+  padding: 10px 20px;
+  background: #AE705E;
+  border-radius: 5px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  color: #FFFFFF;
+  float: right;
+  margin: 50px;
+  top: 0;
+  right: 0;
+  position: absolute; }
+
+#start {
+  opacity: 0; }
+  #start:not(:checked) ~ *, #start:not(:checked) ~ .cards .card {
+    opacity: 0; }
+  #start:checked ~ *, #start:checked ~ .cards .card {
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s; }
+  #start:checked ~ .cards .card.two.cloves {
+    -webkit-transition-delay: 0ms;
+    -moz-transition-delay: 0ms;
+    -o-transition-delay: 0ms;
+    transition-delay: 0ms; }
+  #start:checked ~ .cards .card.three.cloves {
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms; }
+  #start:checked ~ .cards .card.four.cloves {
+    -webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
+    transition-delay: 200ms; }
+  #start:checked ~ .cards .card.four.hearts {
+    -webkit-transition-delay: 300ms;
+    -moz-transition-delay: 300ms;
+    -o-transition-delay: 300ms;
+    transition-delay: 300ms; }
+  #start:checked ~ .cards .card.five.hearts {
+    -webkit-transition-delay: 400ms;
+    -moz-transition-delay: 400ms;
+    -o-transition-delay: 400ms;
+    transition-delay: 400ms; }
+  #start:checked ~ .cards .card.six.diamonds {
+    -webkit-transition-delay: 500ms;
+    -moz-transition-delay: 500ms;
+    -o-transition-delay: 500ms;
+    transition-delay: 500ms; }
+  #start:checked ~ .cards .card.six.hearts {
+    -webkit-transition-delay: 600ms;
+    -moz-transition-delay: 600ms;
+    -o-transition-delay: 600ms;
+    transition-delay: 600ms; }
+  #start:checked ~ .cards .card.seven.diamonds {
+    -webkit-transition-delay: 700ms;
+    -moz-transition-delay: 700ms;
+    -o-transition-delay: 700ms;
+    transition-delay: 700ms; }
+  #start:checked ~ .cards .card.seven.hearts {
+    -webkit-transition-delay: 800ms;
+    -moz-transition-delay: 800ms;
+    -o-transition-delay: 800ms;
+    transition-delay: 800ms; }
+  #start:checked ~ .cards .card.seven.spades {
+    -webkit-transition-delay: 900ms;
+    -moz-transition-delay: 900ms;
+    -o-transition-delay: 900ms;
+    transition-delay: 900ms; }
+  #start:checked ~ .cards .card.eight.diamonds {
+    -webkit-transition-delay: 1000ms;
+    -moz-transition-delay: 1000ms;
+    -o-transition-delay: 1000ms;
+    transition-delay: 1000ms; }
+  #start:checked ~ .cards .card.eight.hearts {
+    -webkit-transition-delay: 1100ms;
+    -moz-transition-delay: 1100ms;
+    -o-transition-delay: 1100ms;
+    transition-delay: 1100ms; }
+  #start:checked ~ .cards .card.eight.spades {
+    -webkit-transition-delay: 1200ms;
+    -moz-transition-delay: 1200ms;
+    -o-transition-delay: 1200ms;
+    transition-delay: 1200ms; }
+  #start:checked ~ .cards .card.nine.diamonds {
+    -webkit-transition-delay: 1300ms;
+    -moz-transition-delay: 1300ms;
+    -o-transition-delay: 1300ms;
+    transition-delay: 1300ms; }
+  #start:checked ~ .cards .card.nine.spades {
+    -webkit-transition-delay: 1400ms;
+    -moz-transition-delay: 1400ms;
+    -o-transition-delay: 1400ms;
+    transition-delay: 1400ms; }
+  #start:checked ~ .cards .card.ten.diamonds {
+    -webkit-transition-delay: 1500ms;
+    -moz-transition-delay: 1500ms;
+    -o-transition-delay: 1500ms;
+    transition-delay: 1500ms; }
+  #start:checked ~ .cards .card.ten.spades {
+    -webkit-transition-delay: 1600ms;
+    -moz-transition-delay: 1600ms;
+    -o-transition-delay: 1600ms;
+    transition-delay: 1600ms; }
+  #start:checked ~ .cards .card.jack.diamonds {
+    -webkit-transition-delay: 1700ms;
+    -moz-transition-delay: 1700ms;
+    -o-transition-delay: 1700ms;
+    transition-delay: 1700ms; }
+  #start:checked ~ .cards .card.queen.diamonds {
+    -webkit-transition-delay: 1800ms;
+    -moz-transition-delay: 1800ms;
+    -o-transition-delay: 1800ms;
+    transition-delay: 1800ms; }
+  #start:checked ~ .cards .card.white.card {
+    -webkit-transition-delay: 1900ms;
+    -moz-transition-delay: 1900ms;
+    -o-transition-delay: 1900ms;
+    transition-delay: 1900ms; }
+
 .chk-button:checked {
   visibility: hidden; }
 
@@ -116,8 +251,8 @@
 /*Card Backgrounds*/
 .cards .card {
   display: inline-block;
-  width: 50px;
-  height: 100px;
+  width: 100px;
+  height: 145px;
   background-color: gray; }
   .cards .card.two.cloves {
     background-image: url("card_imgs/two_cloves.jpg"); }

@@ -1,3 +1,6 @@
+@import "variables";
+@import "dealer";
+
 .chk-button {
 	&:checked {
 		visibility : hidden;
@@ -435,11 +438,10 @@
 .cards {
 	.card {
 		display          : inline-block;
-		width            : 50px;
-		height           : 100px;
+		width            : 100px;
+		height           : 145px;
 		background-color : gray;
 
-		$cards : two cloves, three cloves, four cloves, four hearts, five hearts, six diamonds, six hearts, seven diamonds, seven hearts, seven spades, eight diamonds, eight hearts, eight spades, nine diamonds, nine spades, ten diamonds, ten spades, jack diamonds, queen diamonds, white card;
 		@each $card in $cards {
 			$value : #{nth($card, 1)};
 			$suit : #{nth($card, 2)};

@@ -1,0 +1,66 @@
+@import "variables";
+
+#start:checked {
+
+}
+
+label[for=start] {
+	padding       : 10px 20px;
+	background    : #AE705E;
+	border-radius : 5px;
+	width         : 50px;
+	height        : 20px;
+	text-align    : center;
+	display       : inline-block;
+	font-weight   : bold;
+	color         : #FFFFFF;
+	float         : right;
+	margin        : 50px;
+	top           : 0;
+	right         : 0;
+	position      : absolute;
+}
+
+#start {
+	opacity : 0;
+
+	&:not(:checked) {
+		~ *, ~ .cards .card {
+			opacity : 0;
+		}
+	}
+
+	&:checked {
+		~ *, ~ .cards .card {
+			opacity                            : 1;
+			-webkit-transition-property        : opacity;
+			-moz-transition-property           : opacity;
+			-o-transition-property             : opacity;
+			transition-property                : opacity;
+
+			-webkit-transition-timing-function : ease;
+			-moz-transition-timing-function    : ease;
+			-o-transition-timing-function      : ease;
+			transition-timing-function         : ease;
+
+			-webkit-transition-duration        : 1s;
+			-moz-transition-duration           : 1s;
+			-o-transition-duration             : 1s;
+			transition-duration                : 1s;
+		}
+
+		$delay : 0;
+		@each $card in $cards {
+			$value : #{nth($card, 1)};
+			$suit : #{nth($card, 2)};
+			~ .cards .card.#{$value}.#{$suit} {
+				-webkit-transition-delay : #{$delay}ms;
+				-moz-transition-delay    : #{$delay}ms;
+				-o-transition-delay      : #{$delay}ms;
+				transition-delay         : #{$delay}ms;
+			}
+
+			$delay : $delay + 100
+		}
+	}
+}
