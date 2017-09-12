@@ -4,13 +4,35 @@
 	@return #{$value}ms
 }
 
+@mixin incrementFrameBy($incVal, $emptyAlternatingFrame: false) {
+	$curVal : $incVal;
+	@while ($curVal <= 90) {
+		#{$curVal}% {
+			@content;
+		}
+		$curVal : $curVal + $incVal;
+		@if ($emptyAlternatingFrame) {
+			$curVal : $curVal + $incVal;
+		}
+	}
+	$curVal : $incVal;
+	@if ($emptyAlternatingFrame) {
+		@while ($curVal <= 90) {
+			$curVal : $curVal + ($incVal * 2);
+			#{$curVal}% {
+				// Filler to force SCSS to generate this block
+				content : initial;
+			}
+		}
+	}
+}
+
 $deckRotationOffset : 20;
 
 @mixin rightDeck($deg) {
 	left      : 90vw;
 	top       : 50vh;
 	transform : rotateZ(#{$deg + 90 + $deckRotationOffset}deg);
-	//margin-left : -$cardWidth / 2;
 }
 
 @mixin bottomDeck($deg) {
@@ -64,11 +86,6 @@ label[for=start] {
 		background-position : center;
 		background-repeat   : no-repeat;
 		background-size     : cover;
-
-		&:hover {
-			//width         : $cardWidth * 1.1;
-			//height        : $cardHeight * 1.1;
-		}
 	}
 }
 
@@ -94,6 +111,7 @@ label[for=start] {
 	&:checked {
 		~ {
 			$card-anim-1-duration : 1000;
+			$card-shuffle-anim-duration : 5000;
 			$card-anim-2-duration : 1000;
 
 			*, .cards .card {
@@ -114,12 +132,12 @@ label[for=start] {
 				$suit : #{nth($card, 2)};
 				.cards .card.#{$value}.#{$suit} {
 					transform           : rotateZ(#{$deg}deg);
-					animation-name      : deal-#{$value}-#{$suit};
-					animation-duration  : toMs($card-anim-2-duration);
-					animation-fill-mode : forwards;
+					animation-name      : shuffle-#{$value}-#{$suit}, deal-#{$value}-#{$suit};
+					animation-duration  : toMs($card-shuffle-anim-duration), toMs($card-anim-2-duration);
+					animation-fill-mode : none, forwards;
+					animation-delay     : 0s, toMs($card-shuffle-anim-duration + 500 + $delay);
 
 					@if ($index < 6) {
-						animation-delay : toMs($card-anim-1-duration + $delay);
 						@if ($index % 3 == 0) {
 							// Right
 							&:hover {
@@ -138,10 +156,15 @@ label[for=start] {
 						}
 					} @else {
 						$delayIncrement : 0;
-						animation-delay : toMs($card-anim-1-duration + $delay);
 					}
 				}
-
+				@keyframes shuffle-#{$value}-#{$suit} {
+					@include incrementFrameBy(5, true) {
+						$shuffleAmount : 40;
+						margin-left : #{random($shuffleAmount) - ($shuffleAmount / 2) - 5}vw;
+						margin-top  : #{random($shuffleAmount) - ($shuffleAmount / 3) + 30}vh;
+					}
+				}
 				@keyframes deal-#{$value}-#{$suit} {
 					100% {
 						@if ($index < 6) {
