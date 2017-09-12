@@ -2,22 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <!--I narrowed it down to 4 check boxes and made the values high. if player 1 or 2 hit then they bust and
     if player 3 hits 2 times then they bust. -->
-<!--  case 1: hit1=no hit2=no hit3=no hit4=no | player 2 wins -->
-<!--  case 2: hit1=no hit2=no hit3=no hit4=yes  | cant hit 4 w/o 3, player 2 wins-->
-<!--  case 3: hit1=yes hit2=no hit3=no hit4=no  | player 2 wins , 1 busts -->
-<!--  case 4: hit1=yes hit2=no hit3=no hit4=yes | cant hit 4 w/o 3, player 2 wins , 1 busts -->
-<!--  case 5: hit1=yes hit2=yes hit3=no hit4=no  | player 3 wins, 1 and 2 bust -->
-<!--  case 6: hit1=yes hit2=yes hit3=no hit4=yes | cant hit 4 w/o 3, player 3 wins, 1 and 2 bust -->
-<!--  case 7: hit1=yes hit2=no hit3=yes hit4=no |  player 2 wins, 1 bust-->
-<!--  case 8: hit1=yes hit2=no hit3=yes hit4=yes | player 2 wins, 1 and 3 bust -->
-<!--  case 9: hit1=no hit2=yes hit3=no hit4=no  |  player 1 wins , 2 bust-->
-<!--  case 10: hit1=no hit2=yes hit3=no hit4=yes |cant hit 4 w/o 3, player 1 wins , 2 bust-->
-<!--  case 11: hit1=no hit2=no hit3=yes hit4=no|   player 3 wins,no bust -->
-<!--  case 12: hit1=no hit2=no hit3=yes hit4=yes|  player 2 wins, 3 bust-->
-<!--  case 13: hit1=no hit2=yes hit3=yes hit4=no | player 3 wins, 2 bust-->
-<!--  case 14: hit1=no hit2=yes hit3=yes hit4=yes | player 1 wins, 2 and 3 bust-->
-<!--  case 15: hit1=yes hit2=yes hit3=yes hit4=no | player 3 wins, 1 and 2 bust-->
-<!--  case 16: hit1=yes hit2=yes hit3=yes hit4=yes | no winner,1 and 2 and 3 wins-->
+<!--  case 1: hit1=yes hit2=yes hit3=yes hit4=yes|  no winner,1 and 2 and 3 busts-->
+<!--  case 2: hit1=yes hit2=yes hit3=yes hit4=no  |  player 3 wins, 1 and 2 busts-->
+<!--  case 3: hit1=yes hit2=yes hit3=no hit4=yes  | player 3 wins , 1 and 2 busts--->
+<!--  case 4: hit1=yes hit2=yes hit3=no hit4=no | player 3 wins , 1 and 2 busts--->
+<!--  case 5: hit1=yes hit2=no hit3=yes hit4=yes  | player 2 wins, 1 and 3 bust -->
+<!--  case 6: hit1=yes hit2=no hit3=yes hit4=no |  player 3 wins, 1 busts -->
+<!--  case 7: hit1=yes hit2=no hit3=no hit4=yes |  player 2 wins, 1 busts-->
+<!--  case 8: hit1=yes hit2=no hit3=no hit4=no | player 2 wins, 1 busts -->
+<!--  case 9: hit1=no hit2=yes hit3=yes hit4=yes  |  player 1 wins , 2 and 3 bust-->
+<!--  case 10: hit1=no hit2=yes hit3=yes hit4=no | player 3 wins , 2 busts-->
+<!--  case 11: hit1=no hit2=yes hit3=no hit4=yes|   player 1 wins,2 busts -->
+<!--  case 12: hit1=no hit2=yes hit3=no hit4=no|  player 1 wins, 2 busts-->
+<!--  case 13: hit1=no hit2=no hit3=yes hit4=yes | player 2 wins, 3 busts-->
+<!--  case 14: hit1=no hit2=no hit3=yes hit4=no | player 3 wins, no bust-->
+<!--  case 15: hit1=no hit2=no hit3=no hit4=yes | player 2 wins, no bust-->
+<!--  case 16: hit1=no hit2=no hit3=no hit4=no | player 2 wins, no bust-->
 <!--If a card is missing a border then you can do a 1px solid black border to the missing sides and it fixes it -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
