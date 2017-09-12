@@ -3,7 +3,7 @@
 }
 
 /*Case 1s*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.two.spades {
 	background-image : url("card_imgs/nine_diamonds.jpg");
 }
 
