@@ -19,51 +19,69 @@ label[for=start] {
 	top           : 0;
 	right         : 0;
 	position      : absolute;
+
+	//transition    : top 0s ease 1s, opacity 1s ease 0s;
 }
 
 .cards {
-	width      : 100vw;
-	text-align : center;
+	width         : 100vw;
+	text-align    : center;
+	padding-right : 10%;
 
 	.card {
 		display          : inline-block;
 		position         : absolute;
+		//margin: -40px;
 		transform-origin : 75% 0;
 	}
 }
 
 #start {
+	$targetDeg : 180 * 1 / 3;
+	$degIncrement : $targetDeg / length($cards);
+	$deg : $targetDeg / -2;
+
 	opacity : 0;
 
-	&:not(:checked) {
-		~ *, ~ .cards .card {
-			opacity   : 0;
-			transform : rotateZ(0deg);
+	&:not(:checked) ~ {
+		*, .cards .card {
+			opacity : 0;
+		}
+		.cards .card {
+			transform : rotateZ(#{$deg}deg);
+		}
+		label[for=start] {
+			opacity : 1;
 		}
 	}
 
 	&:checked {
-		~ *, ~ .cards .card {
-			opacity                    : 1;
-			transition-property        : transform, opacity;
-			transition-timing-function : ease;
-			transition-duration        : 1s;
-		}
-
-		$delay : 0;
-		$targetDeg : 180 * 1 / 3;
-		$degIncrement : $targetDeg / length($cards);
-		$deg : $targetDeg / -2;
-		@each $card in $cards {
-			$value : #{nth($card, 1)};
-			$suit : #{nth($card, 2)};
-			~ .cards .card.#{$value}.#{$suit} {
-				transition-delay : #{$delay}ms;
-				transform        : rotateZ(#{$deg}deg);
+		~ {
+			*, .cards .card {
+				opacity                    : 1;
+				transition-property        : opacity, top, transform;
+				transition-timing-function : ease;
+				transition-duration        : 1s;
+			}
+			label[for=start] {
+				transition : top 0s ease 1s, opacity 1s ease 0s;
 			}
 
-			$delay : $delay + 100;
-			$deg : $deg + $degIncrement;
+			$delay : 0;
+			@each $card in $cards {
+				$value : #{nth($card, 1)};
+				$suit : #{nth($card, 2)};
+				.cards .card.#{$value}.#{$suit} {
+					transform        : rotateZ(#{$deg}deg);
+				}
+
+				$deg : $deg + $degIncrement;
+			}
+
+			label[for=start] {
+				opacity : 0;
+				top     : -1000%;
+			}
 		}
 	}
 }

@@ -16,7 +16,8 @@ label[for=start] {
 
 .cards {
   width: 100vw;
-  text-align: center; }
+  text-align: center;
+  padding-right: 10%; }
   .cards .card {
     display: inline-block;
     position: absolute;
@@ -25,73 +26,61 @@ label[for=start] {
 #start {
   opacity: 0; }
   #start:not(:checked) ~ *, #start:not(:checked) ~ .cards .card {
-    opacity: 0;
-    transform: rotateZ(0deg); }
+    opacity: 0; }
+  #start:not(:checked) ~ .cards .card {
+    transform: rotateZ(-30deg); }
+  #start:not(:checked) ~ label[for=start] {
+    opacity: 1; }
   #start:checked ~ *, #start:checked ~ .cards .card {
     opacity: 1;
-    transition-property: transform, opacity;
+    transition-property: opacity, top, transform;
     transition-timing-function: ease;
     transition-duration: 1s; }
+  #start:checked ~ label[for=start] {
+    transition: top 0s ease 1s, opacity 1s ease 0s; }
   #start:checked ~ .cards .card.two.cloves {
-    transition-delay: 0ms;
     transform: rotateZ(-30deg); }
   #start:checked ~ .cards .card.three.cloves {
-    transition-delay: 100ms;
     transform: rotateZ(-27deg); }
   #start:checked ~ .cards .card.four.cloves {
-    transition-delay: 200ms;
     transform: rotateZ(-24deg); }
   #start:checked ~ .cards .card.four.hearts {
-    transition-delay: 300ms;
     transform: rotateZ(-21deg); }
   #start:checked ~ .cards .card.five.hearts {
-    transition-delay: 400ms;
     transform: rotateZ(-18deg); }
   #start:checked ~ .cards .card.six.diamonds {
-    transition-delay: 500ms;
     transform: rotateZ(-15deg); }
   #start:checked ~ .cards .card.six.hearts {
-    transition-delay: 600ms;
     transform: rotateZ(-12deg); }
   #start:checked ~ .cards .card.seven.diamonds {
-    transition-delay: 700ms;
     transform: rotateZ(-9deg); }
   #start:checked ~ .cards .card.seven.hearts {
-    transition-delay: 800ms;
     transform: rotateZ(-6deg); }
   #start:checked ~ .cards .card.seven.spades {
-    transition-delay: 900ms;
     transform: rotateZ(-3deg); }
   #start:checked ~ .cards .card.eight.diamonds {
-    transition-delay: 1000ms;
     transform: rotateZ(0deg); }
   #start:checked ~ .cards .card.eight.hearts {
-    transition-delay: 1100ms;
     transform: rotateZ(3deg); }
   #start:checked ~ .cards .card.eight.spades {
-    transition-delay: 1200ms;
     transform: rotateZ(6deg); }
   #start:checked ~ .cards .card.nine.diamonds {
-    transition-delay: 1300ms;
     transform: rotateZ(9deg); }
   #start:checked ~ .cards .card.nine.spades {
-    transition-delay: 1400ms;
     transform: rotateZ(12deg); }
   #start:checked ~ .cards .card.ten.diamonds {
-    transition-delay: 1500ms;
     transform: rotateZ(15deg); }
   #start:checked ~ .cards .card.ten.spades {
-    transition-delay: 1600ms;
     transform: rotateZ(18deg); }
   #start:checked ~ .cards .card.jack.diamonds {
-    transition-delay: 1700ms;
     transform: rotateZ(21deg); }
   #start:checked ~ .cards .card.queen.diamonds {
-    transition-delay: 1800ms;
     transform: rotateZ(24deg); }
   #start:checked ~ .cards .card.white.card {
-    transition-delay: 1900ms;
     transform: rotateZ(27deg); }
+  #start:checked ~ label[for=start] {
+    opacity: 0;
+    top: -1000%; }
 
 .chk-button:checked {
   visibility: hidden; }
