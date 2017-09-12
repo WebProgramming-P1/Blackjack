@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--I Hamel Patel did this work on my own. Account for my codd and hithub is hpatel83-->
+<!--  case 1: hit1=no hit2=no hit3=no hit4=no | player 2 wins -->
+<!--  case 2: hit1=no hit2=no hit3=no hit4=yes  | cant hit 4 w/o 3, player 2 wins-->
+<!--  case 3: hit1=yes hit2=no hit3=no hit4=no  | player 2 wins , 1 busts -->
+<!--  case 4: hit1=yes hit2=no hit3=no hit4=yes | cant hit 4 w/o 3, player 2 wins , 1 busts -->
+<!--  case 5: hit1=yes hit2=yes hit3=no hit4=no  | player 3 wins, 1 and 2 bust -->
+<!--  case 6: hit1=yes hit2=yes hit3=no hit4=yes | cant hit 4 w/o 3, player 3 wins, 1 and 2 bust -->
+<!--  case 7: hit1=yes hit2=no hit3=yes hit4=no |  player 2 wins, 1 bust-->
+<!--  case 8: hit1=yes hit2=no hit3=yes hit4=yes | player 2 wins, 1 and 3 bust -->
+<!--  case 9: hit1=no hit2=yes hit3=no hit4=no  |  player 1 wins , 2 bust-->
+<!--  case 10: hit1=no hit2=yes hit3=no hit4=yes |cant hit 4 w/o 3, player 1 wins , 2 bust-->
+<!--  case 11: hit1=no hit2=no hit3=yes hit4=no|   player 3 wins,no bust -->
+<!--  case 12: hit1=no hit2=no hit3=yes hit4=yes|  player 2 wins, 3 bust-->
+<!--  case 13: hit1=no hit2=yes hit3=yes hit4=no | player 3 wins, 2 bust-->
+<!--  case 14: hit1=no hit2=yes hit3=yes hit4=yes | player 1 wins, 2 and 3 bust-->
+<!--  case 15: hit1=yes hit2=yes hit3=yes hit4=no | player 3 wins, 1 and 2 bust-->
+<!--  case 16: hit1=yes hit2=yes hit3=yes hit4=yes | no winner,1 and 2 and 3 wins-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link href="xxx.css" rel="stylesheet" type="text/css"/>
+  <title>Blackjack</title>
+</head>
+<body>
+    <h1>BlackJack</h1>
+    <h2>Player 1</h2>
+      <input type="checkbox" id="check-1" class="chk-button player1" />Hit
+      <input type="checkbox" id="check-2" class="chk-button player1" />Stay
+      <div class="cards">
+            <div class="card seven spades"></div>
+            <div class="card ten diamonds"></div>
+            <div class="card white card"></div>
+      </div>
+    <h3>Player 2</h3>
+      <input type="checkbox" id="check-3" class="chk-button player2" />Hit
+      <input type="checkbox" id="check-4" class="chk-button player2" />Stay
+      <div class="cards">
+            <div class="card jack diamonds"></div>
+            <div class="card ten spades"></div>
+            <div class="card white card2"></div>
+      </div>
+    <h4>Player 3</h4>
+      <input type="checkbox" id="check-5" class="chk-button player3" />Hit
+      <input type="checkbox" id="check-6" class="chk-button player3" />Hit
+      <input type="checkbox" id="check-7" class="chk-button player3" />Stay
+      <div class="cards">
+            <div class="card five hearts"></div>
+            <div class="card seven hearts"></div>
+            <div class="card white card3"></div>
+            <div class="card white card4"></div>
+      </div>
+</body>
+</html>

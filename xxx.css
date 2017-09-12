@@ -1,0 +1,183 @@
+body{
+  font-size: 24px;
+}
+.chk-button:checked {
+    visibility: hidden;
+}
+/*Case 1*/
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.white.card {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.white.card2 {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.white.card3 {
+	background-image : url("card_imgs/seven_diamonds.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.white.card4 {
+	background-image : url("card_imgs/eight_spades.jpg");
+}
+
+/*Case 2*/
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked)~ #check-7:checked ~ .cards .card.white.card {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card2 {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card3 {
+	background-image : url("card_imgs/seven_diamonds.jpg");
+}
+/*Case 3 & 4*/
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card2 {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+/*Case 5*/
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked~ #check-7:not(:checked) ~ .cards .card.white.card {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked~ #check-7:not(:checked) ~ .cards .card.white.card3 {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked~ #check-7:not(:checked) ~ .cards .card.white.card4 {
+	background-image : url("card_imgs/seven_diamonds.jpg");
+}
+/*Case 6*/
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card3 {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+/*Case 7 and 8 */
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card{
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+/*Case 9*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.white.card2 {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.white.card3 {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.white.card4 {
+	background-image : url("card_imgs/seven_diamonds.jpg");
+}
+/*Case 10*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card2 {
+  background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card3 {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+/*Case 11 and 12*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card2 {
+  background-image : url("card_imgs/nine_spades.jpg");
+}
+/*Case 13*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.white.card3 {
+  background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.white.card4 {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+/*Case 14*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.white.card3 {
+  background-image : url("card_imgs/nine_spades.jpg");
+}
+/*Case 15 nothing*/
+/*Case 16 nothing*/
+.cards .card {
+	display          : inline-block;
+	width            : 100px;
+	height           : 140px;
+	background-color : gray;
+}
+.cards .card.two.cloves {
+	background-image : url("card_imgs/two_cloves.jpg");
+}
+
+.cards .card.three.cloves {
+	background-image : url("card_imgs/three_cloves.jpg");
+}
+
+.cards .card.four.cloves {
+	background-image : url("card_imgs/four_cloves.jpg");
+}
+
+.cards .card.four.hearts {
+	background-image : url("card_imgs/four_hearts.jpg");
+}
+
+.cards .card.five.hearts {
+	background-image : url("card_imgs/five_hearts.jpg");
+}
+
+.cards .card.six.diamonds {
+	background-image : url("card_imgs/six_diamonds.jpg");
+}
+
+.cards .card.six.hearts {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+
+.cards .card.seven.diamonds {
+	background-image : url("card_imgs/seven_diamonds.jpg");
+}
+
+.cards .card.seven.hearts {
+	background-image : url("card_imgs/seven_hearts.jpg");
+}
+
+.cards .card.seven.spades {
+	background-image : url("card_imgs/seven_spades.jpg");
+}
+
+.cards .card.eight.diamonds {
+	background-image : url("card_imgs/eight_diamonds.jpg");
+}
+
+.cards .card.eight.hearts {
+	background-image : url("card_imgs/eight_hearts.jpg");
+}
+
+.cards .card.eight.spades {
+	background-image : url("card_imgs/eight_spades.jpg");
+}
+
+.cards .card.nine.diamonds {
+	background-image : url("card_imgs/nine_diamonds.jpg");
+}
+
+.cards .card.nine.spades {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+
+.cards .card.ten.diamonds {
+	background-image : url("card_imgs/ten_diamonds.jpg");
+}
+.cards .card.ten.spades {
+	background-image : url("card_imgs/ten_spades.jpg");
+}
+.cards .card.jack.diamonds {
+	background-image : url("card_imgs/jack_diamonds.jpg");
+}
+.cards .card.queen.diamonds {
+	background-image : url("card_imgs/queen_diamonds.jpg");
+}
+.cards .card.white.card {
+    background-image : url("card_imgs/white_card.jpg");
+}
+.cards .card.white.card2 {
+    background-image : url("card_imgs/white_card2.jpg");
+}
+.cards .card.white.card3 {
+    background-image : url("card_imgs/white_card3.jpg");
+}
+.cards .card.white.card4 {
+    background-image : url("card_imgs/white_card4.jpg");
+}
