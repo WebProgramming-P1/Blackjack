@@ -15,6 +15,7 @@ label[for=start] {
   position: absolute; }
 
 .cards {
+  width: 100vw;
   text-align: center;
   margin: auto; }
   .cards .card {
@@ -22,9 +23,13 @@ label[for=start] {
     position: absolute;
     transform-origin: 75% 0;
     top: 10vh;
+    left: 50vw;
     width: 100px;
     height: 145px;
-    margin-left: -50px; }
+    margin-left: -100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 #start {
   opacity: 0; }
@@ -36,82 +41,219 @@ label[for=start] {
     opacity: 1; }
   #start:checked ~ *, #start:checked ~ .cards .card {
     opacity: 1;
-    transition-property: opacity, top, transform;
+    transition-property: all;
     transition-timing-function: ease;
     transition-duration: 1000ms; }
   #start:checked ~ label[for=start] {
-    transition: top 0s ease 1000ms, opacity 1000ms ease 0s; }
+    transition: all 1s ease 0s, top 0s ease 1000ms, opacity 1000ms ease 0s; }
   #start:checked ~ .cards .card.two.cloves {
     transform: rotateZ(-30deg);
+    animation-name: deal-two-cloves;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
     animation-delay: 1000ms; }
+    #start:checked ~ .cards .card.two.cloves:hover {
+      margin-left: -130px; }
+@keyframes deal-two-cloves {
+  100% {
+    left: 90vw;
+    top: 50vh;
+    transform: rotateZ(80deg); } }
   #start:checked ~ .cards .card.three.cloves {
     transform: rotateZ(-27deg);
+    animation-name: deal-three-cloves;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
     animation-delay: 1400ms; }
+    #start:checked ~ .cards .card.three.cloves:hover {
+      margin-top: -30px; }
+@keyframes deal-three-cloves {
+  100% {
+    left: 50vw;
+    top: 90vh;
+    transform: rotateZ(173deg); } }
   #start:checked ~ .cards .card.four.cloves {
     transform: rotateZ(-24deg);
+    animation-name: deal-four-cloves;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
     animation-delay: 1800ms; }
+    #start:checked ~ .cards .card.four.cloves:hover {
+      margin-left: -70px; }
+@keyframes deal-four-cloves {
+  100% {
+    left: 10vw;
+    top: 50vh;
+    transform: rotateZ(266deg); } }
   #start:checked ~ .cards .card.four.hearts {
     transform: rotateZ(-21deg);
+    animation-name: deal-four-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
     animation-delay: 2200ms; }
+    #start:checked ~ .cards .card.four.hearts:hover {
+      margin-left: -130px; }
+@keyframes deal-four-hearts {
+  100% {
+    left: 90vw;
+    top: 50vh;
+    transform: rotateZ(89deg); } }
   #start:checked ~ .cards .card.five.hearts {
     transform: rotateZ(-18deg);
+    animation-name: deal-five-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
     animation-delay: 2600ms; }
+    #start:checked ~ .cards .card.five.hearts:hover {
+      margin-top: -30px; }
+@keyframes deal-five-hearts {
+  100% {
+    left: 50vw;
+    top: 90vh;
+    transform: rotateZ(182deg); } }
   #start:checked ~ .cards .card.six.diamonds {
     transform: rotateZ(-15deg);
+    animation-name: deal-six-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
     animation-delay: 3000ms; }
+    #start:checked ~ .cards .card.six.diamonds:hover {
+      margin-left: -70px; }
+@keyframes deal-six-diamonds {
+  100% {
+    left: 10vw;
+    top: 50vh;
+    transform: rotateZ(275deg); } }
   #start:checked ~ .cards .card.six.hearts {
     transform: rotateZ(-12deg);
+    animation-name: deal-six-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
     animation-delay: 3400ms; }
+@keyframes deal-six-hearts {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.seven.diamonds {
     transform: rotateZ(-9deg);
-    animation-delay: 3800ms; }
+    animation-name: deal-seven-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-seven-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.seven.hearts {
     transform: rotateZ(-6deg);
-    animation-delay: 4200ms; }
+    animation-name: deal-seven-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-seven-hearts {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.seven.spades {
     transform: rotateZ(-3deg);
-    animation-delay: 4600ms; }
+    animation-name: deal-seven-spades;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-seven-spades {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.eight.diamonds {
     transform: rotateZ(0deg);
-    animation-delay: 5000ms; }
+    animation-name: deal-eight-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-eight-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.eight.hearts {
     transform: rotateZ(3deg);
-    animation-delay: 5400ms; }
+    animation-name: deal-eight-hearts;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-eight-hearts {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.eight.spades {
     transform: rotateZ(6deg);
-    animation-delay: 5800ms; }
+    animation-name: deal-eight-spades;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-eight-spades {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.nine.diamonds {
     transform: rotateZ(9deg);
-    animation-delay: 6200ms; }
+    animation-name: deal-nine-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-nine-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.nine.spades {
     transform: rotateZ(12deg);
-    animation-delay: 6600ms; }
+    animation-name: deal-nine-spades;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-nine-spades {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.ten.diamonds {
     transform: rotateZ(15deg);
-    animation-delay: 7000ms; }
+    animation-name: deal-ten-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-ten-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.ten.spades {
     transform: rotateZ(18deg);
-    animation-delay: 7400ms; }
+    animation-name: deal-ten-spades;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-ten-spades {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.jack.diamonds {
     transform: rotateZ(21deg);
-    animation-delay: 7800ms; }
+    animation-name: deal-jack-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-jack-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.queen.diamonds {
     transform: rotateZ(24deg);
-    animation-delay: 8200ms; }
+    animation-name: deal-queen-diamonds;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-queen-diamonds {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.white.card {
     transform: rotateZ(27deg);
-    animation-delay: 8600ms; }
-  #start:checked ~ .cards .card {
-    animation-name: deal;
+    animation-name: deal-white-card;
     animation-duration: 1000ms;
-    animation-fill-mode: forwards; }
+    animation-fill-mode: forwards;
+    animation-delay: 3400ms; }
+@keyframes deal-white-card {
+  100% {
+    transform: rotateZ(0deg); } }
   #start:checked ~ label[for=start] {
     opacity: 0;
     top: -1000%; }
 
-@keyframes deal {
-  100% {
-    top: 50vh; } }
 .chk-button:checked {
   visibility: hidden; }
 
