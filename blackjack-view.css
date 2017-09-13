@@ -1,44 +1,39 @@
 body {
-    width: auto;
-    height: 600px;
+    width: 95%;
+    height: auto;
+}
 
+#header {
+    padding: 5px;
+    overflow: auto;
+    top: 0;
 }
 
 #game-container {
-    border: 3px black solid;
+    border: 3px black dashed;
     padding: 20px;
     position: relative;
     top: 30px;
 }
 
 #player1 {
-    border: 2px blue solid;
+    border: 3px black dashed;
     position: absolute;
-    bottom: 300px;
+    top: 250px;
     left: 0;
 }
 
 #player2 {
-    border: 2px blue solid;
+    border: 3px black dashed;
     position: absolute;
-    left: 43%;
-    bottom: 90px;
+    left: 470px;
+    bottom: -500px;
+    overflow: auto;
 }
 
 #player3 {
-    border: 2px blue solid;
+    border: 3px black dashed;
     position: absolute;
-    bottom: 300px;
+    top: 250px;
     right: 0;
-}
-
-#info {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-
-.centered {
-    text-align: center;
 }
