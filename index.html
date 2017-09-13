@@ -21,92 +21,55 @@
 <!--If a card is missing a border then you can do a 1px solid black border to the missing sides and it fixes it -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <link href="index.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" type="text/css" href="blackjack-view.css" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
     <title>Blackjack</title>
 </head>
-<body id="game-container">
-<div id="header" class="centered">
+<body>
+    <br />
     <h1>BlackJack</h1>
-</div>
-    <a href="index2.html">Checkbox Example</a>
-<div id="player1">
-    <h2>Player 1</h2>
-    <table>
-        <tr>
-            <th>
-                <input type="checkbox" id="playingcards" name="hit1" value="cardhit">
-                <label for="playingcards">Hit</label>
-            </th>
-            <th><img alt="7 spades" src="7_spades.jpg"/></th>
-            <th><img alt="10 diamonds" src="10_diamonds.jpg"/></th>
-            <th id="drawcard1"> </th>
-        </tr>
-        <tr>
-            <th>
-                <input type="checkbox" id="playingcards2" name="Stay" value="cardstay">
-                <label for="playingcards2">Stay</label>
-            </th>
-        </tr>
-    </table>
-</div>
-<div id="player2">
-    <h2>Player 2</h2>
-    <table>
-        <tr>
-            <th>
-                <input type="checkbox" id="playingcards3" name="hit2" value="cardhit">
-                <label for="playingcards3">Hit</label>
-            </th>
-            <th><img alt="jack dimonds" src="jack_diamonds.jpg"/></th>
-            <th><img alt="10 spades" src="10_spades.jpg"/></th>
-            <th id="drawcard2"> </th>
-        </tr>
-        <tr>
-            <th>
-                <input type="checkbox" id="playingcards4" name="Stay" value="cardstay">
-                <label for="playingcards4">Stay</label>
-            </th>
-        </tr>
-    </table>
-</div>
-<div id="player3">
-    <h2>Player 3</h2>
-    <table>
-        <tr>
-            <th>
-                <input type="checkbox" id="playingcards5" name="hit3" value="cardhit">
-                <label for="playingcards5">Hit</label>
-            </th>
-            <th><img alt="5 hearts" src="5_hearts.jpg"/></th>
-            <th><img alt="7 hearts" src="7_hearts.jpg"/></th>
-            <th id="drawcard3"> </th>
-            <th id="drawcard4"> </th>
-        </tr>
-        <tr>
-            <th>
-                <input type="checkbox" id="playingcards6" name="hit4" value="cardhit">
-                <label for="playingcards6">Hit</label>
-                <!--hit button 3 needs to be on top of hit button 4 or the use cases dont work-->
-            </th>
-        <tr>
-            <th>
-                <input type="checkbox" id="playingcards7" name="Stay" value="cardstay">
-                <label for="playingcards7">Stay</label>
-            </th>
-        </tr>
-    </table>
-</div>
-<div id="info">
-    <h2>Cards in Deck in order from Top to Bottom</h2>
-    <table id="deck">
-        <tr>
-            <th><img alt="9 spades" src="9_spades.jpg"/></th>
-            <th><img alt="6 hearts" src="6_hearts.jpg"/></th>
-            <th><img alt="7 diamonds" src="7_diamonds.jpg"/></th>
-            <th><img alt="8 hearts" src="8_hearts.jpg"/></th>
-        </tr>
-    </table>
-</div>
+    <input type="checkbox" id="start" />
+    <label for="start">Start</label>
+
+
+    <!--Style the labels, leave the checkboxes alone. They will get checked when you click the label. See the start button-->
+    <label for="check-1">Hit</label>
+    <label for="check-2">Stay</label>
+    <label for="check-3">Hit</label>
+    <label for="check-4">Stay</label>
+    <label for="check-5">Hit</label>
+    <label for="check-6">Hit</label>
+    <label for="check-7">Stay</label>
+
+    <!--Style the labels, leave the checkboxes alone. They will get checked when you click the label. See the start button-->
+    <input type="checkbox" id="check-1" class="chk-button player2" />
+    <input type="checkbox" id="check-2" class="chk-button player3" />
+    <input type="checkbox" id="check-3" class="chk-button player1" />
+    <input type="checkbox" id="check-4" class="chk-button player2" />
+    <input type="checkbox" id="check-5" class="chk-button player3" />
+    <input type="checkbox" id="check-6" class="chk-button player1" />
+    <input type="checkbox" id="check-7" class="chk-button player2" />
+
+    <div class="cards">
+        <div class="card two cloves"></div>
+        <div class="card three cloves"></div>
+        <div class="card four cloves"></div>
+        <div class="card four hearts"></div>
+        <div class="card five hearts"></div>
+        <div class="card six diamonds"></div>
+        <div class="card six hearts"></div>
+        <div class="card seven diamonds"></div>
+        <div class="card seven hearts"></div>
+        <div class="card seven spades"></div>
+        <div class="card eight diamonds"></div>
+        <div class="card eight hearts"></div>
+        <div class="card eight spades"></div>
+        <div class="card nine diamonds"></div>
+        <div class="card nine spades"></div>
+        <div class="card ten diamonds"></div>
+        <div class="card ten spades"></div>
+        <div class="card jack diamonds"></div>
+        <div class="card queen diamonds"></div>
+        <!--<div class="card white card"></div>-->
+    </div>
 </body>
 </html>

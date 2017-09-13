@@ -48,12 +48,58 @@ label[for=start] {
     transition: all 1s ease 0s, top 0s ease 1000ms, opacity 1000ms ease 0s; }
   #start:checked ~ .cards .card.two.cloves {
     transform: rotateZ(-30deg);
-    animation-name: deal-two-cloves;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 1000ms; }
+    animation-name: shuffle-two-cloves, deal-two-cloves;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 5500ms; }
     #start:checked ~ .cards .card.two.cloves:hover {
       margin-left: -130px; }
+@keyframes shuffle-two-cloves {
+  5% {
+    margin-left: -18vw;
+    margin-top: 29.66667vh; }
+  15% {
+    margin-left: -11vw;
+    margin-top: 41.66667vh; }
+  25% {
+    margin-left: -11vw;
+    margin-top: 48.66667vh; }
+  35% {
+    margin-left: 10vw;
+    margin-top: 48.66667vh; }
+  45% {
+    margin-left: 7vw;
+    margin-top: 49.66667vh; }
+  55% {
+    margin-left: 7vw;
+    margin-top: 52.66667vh; }
+  65% {
+    margin-left: -1vw;
+    margin-top: 21.66667vh; }
+  75% {
+    margin-left: -10vw;
+    margin-top: 38.66667vh; }
+  85% {
+    margin-left: -7vw;
+    margin-top: 50.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-two-cloves {
   100% {
     left: 90vw;
@@ -61,12 +107,58 @@ label[for=start] {
     transform: rotateZ(80deg); } }
   #start:checked ~ .cards .card.three.cloves {
     transform: rotateZ(-27deg);
-    animation-name: deal-three-cloves;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 1400ms; }
+    animation-name: shuffle-three-cloves, deal-three-cloves;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 5900ms; }
     #start:checked ~ .cards .card.three.cloves:hover {
       margin-top: -30px; }
+@keyframes shuffle-three-cloves {
+  5% {
+    margin-left: 3vw;
+    margin-top: 43.66667vh; }
+  15% {
+    margin-left: -23vw;
+    margin-top: 21.66667vh; }
+  25% {
+    margin-left: 8vw;
+    margin-top: 37.66667vh; }
+  35% {
+    margin-left: 2vw;
+    margin-top: 51.66667vh; }
+  45% {
+    margin-left: -18vw;
+    margin-top: 20.66667vh; }
+  55% {
+    margin-left: 15vw;
+    margin-top: 37.66667vh; }
+  65% {
+    margin-left: 1vw;
+    margin-top: 32.66667vh; }
+  75% {
+    margin-left: -6vw;
+    margin-top: 21.66667vh; }
+  85% {
+    margin-left: -3vw;
+    margin-top: 56.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-three-cloves {
   100% {
     left: 50vw;
@@ -74,12 +166,58 @@ label[for=start] {
     transform: rotateZ(173deg); } }
   #start:checked ~ .cards .card.four.cloves {
     transform: rotateZ(-24deg);
-    animation-name: deal-four-cloves;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 1800ms; }
+    animation-name: shuffle-four-cloves, deal-four-cloves;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 6300ms; }
     #start:checked ~ .cards .card.four.cloves:hover {
       margin-left: -70px; }
+@keyframes shuffle-four-cloves {
+  5% {
+    margin-left: -8vw;
+    margin-top: 47.66667vh; }
+  15% {
+    margin-left: -22vw;
+    margin-top: 24.66667vh; }
+  25% {
+    margin-left: -17vw;
+    margin-top: 47.66667vh; }
+  35% {
+    margin-left: -1vw;
+    margin-top: 30.66667vh; }
+  45% {
+    margin-left: 11vw;
+    margin-top: 20.66667vh; }
+  55% {
+    margin-left: 2vw;
+    margin-top: 17.66667vh; }
+  65% {
+    margin-left: 4vw;
+    margin-top: 31.66667vh; }
+  75% {
+    margin-left: 10vw;
+    margin-top: 55.66667vh; }
+  85% {
+    margin-left: -9vw;
+    margin-top: 31.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-four-cloves {
   100% {
     left: 10vw;
@@ -87,12 +225,58 @@ label[for=start] {
     transform: rotateZ(266deg); } }
   #start:checked ~ .cards .card.four.hearts {
     transform: rotateZ(-21deg);
-    animation-name: deal-four-hearts;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 2200ms; }
+    animation-name: shuffle-four-hearts, deal-four-hearts;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 6700ms; }
     #start:checked ~ .cards .card.four.hearts:hover {
       margin-left: -130px; }
+@keyframes shuffle-four-hearts {
+  5% {
+    margin-left: -11vw;
+    margin-top: 38.66667vh; }
+  15% {
+    margin-left: 13vw;
+    margin-top: 54.66667vh; }
+  25% {
+    margin-left: 13vw;
+    margin-top: 18.66667vh; }
+  35% {
+    margin-left: 0vw;
+    margin-top: 44.66667vh; }
+  45% {
+    margin-left: 12vw;
+    margin-top: 40.66667vh; }
+  55% {
+    margin-left: -20vw;
+    margin-top: 19.66667vh; }
+  65% {
+    margin-left: -10vw;
+    margin-top: 50.66667vh; }
+  75% {
+    margin-left: -6vw;
+    margin-top: 54.66667vh; }
+  85% {
+    margin-left: -9vw;
+    margin-top: 22.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-four-hearts {
   100% {
     left: 90vw;
@@ -100,12 +284,58 @@ label[for=start] {
     transform: rotateZ(89deg); } }
   #start:checked ~ .cards .card.five.hearts {
     transform: rotateZ(-18deg);
-    animation-name: deal-five-hearts;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 2600ms; }
+    animation-name: shuffle-five-hearts, deal-five-hearts;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7100ms; }
     #start:checked ~ .cards .card.five.hearts:hover {
       margin-top: -30px; }
+@keyframes shuffle-five-hearts {
+  5% {
+    margin-left: 6vw;
+    margin-top: 19.66667vh; }
+  15% {
+    margin-left: 15vw;
+    margin-top: 31.66667vh; }
+  25% {
+    margin-left: -21vw;
+    margin-top: 47.66667vh; }
+  35% {
+    margin-left: -17vw;
+    margin-top: 52.66667vh; }
+  45% {
+    margin-left: -15vw;
+    margin-top: 45.66667vh; }
+  55% {
+    margin-left: -7vw;
+    margin-top: 28.66667vh; }
+  65% {
+    margin-left: -20vw;
+    margin-top: 40.66667vh; }
+  75% {
+    margin-left: -2vw;
+    margin-top: 48.66667vh; }
+  85% {
+    margin-left: 13vw;
+    margin-top: 43.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-five-hearts {
   100% {
     left: 50vw;
@@ -113,12 +343,58 @@ label[for=start] {
     transform: rotateZ(182deg); } }
   #start:checked ~ .cards .card.six.diamonds {
     transform: rotateZ(-15deg);
-    animation-name: deal-six-diamonds;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3000ms; }
+    animation-name: shuffle-six-diamonds, deal-six-diamonds;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7500ms; }
     #start:checked ~ .cards .card.six.diamonds:hover {
       margin-left: -70px; }
+@keyframes shuffle-six-diamonds {
+  5% {
+    margin-left: -11vw;
+    margin-top: 54.66667vh; }
+  15% {
+    margin-left: -3vw;
+    margin-top: 29.66667vh; }
+  25% {
+    margin-left: -5vw;
+    margin-top: 18.66667vh; }
+  35% {
+    margin-left: -17vw;
+    margin-top: 20.66667vh; }
+  45% {
+    margin-left: 15vw;
+    margin-top: 27.66667vh; }
+  55% {
+    margin-left: -10vw;
+    margin-top: 21.66667vh; }
+  65% {
+    margin-left: -21vw;
+    margin-top: 47.66667vh; }
+  75% {
+    margin-left: 11vw;
+    margin-top: 33.66667vh; }
+  85% {
+    margin-left: -6vw;
+    margin-top: 23.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-six-diamonds {
   100% {
     left: 10vw;
@@ -126,127 +402,771 @@ label[for=start] {
     transform: rotateZ(275deg); } }
   #start:checked ~ .cards .card.six.hearts {
     transform: rotateZ(-12deg);
-    animation-name: deal-six-hearts;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-six-hearts, deal-six-hearts;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-six-hearts {
+  5% {
+    margin-left: -4vw;
+    margin-top: 40.66667vh; }
+  15% {
+    margin-left: -18vw;
+    margin-top: 41.66667vh; }
+  25% {
+    margin-left: -14vw;
+    margin-top: 17.66667vh; }
+  35% {
+    margin-left: -2vw;
+    margin-top: 45.66667vh; }
+  45% {
+    margin-left: -4vw;
+    margin-top: 18.66667vh; }
+  55% {
+    margin-left: 13vw;
+    margin-top: 24.66667vh; }
+  65% {
+    margin-left: 13vw;
+    margin-top: 39.66667vh; }
+  75% {
+    margin-left: -1vw;
+    margin-top: 26.66667vh; }
+  85% {
+    margin-left: -14vw;
+    margin-top: 23.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-six-hearts {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.seven.diamonds {
     transform: rotateZ(-9deg);
-    animation-name: deal-seven-diamonds;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-seven-diamonds, deal-seven-diamonds;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-seven-diamonds {
+  5% {
+    margin-left: -8vw;
+    margin-top: 51.66667vh; }
+  15% {
+    margin-left: -23vw;
+    margin-top: 30.66667vh; }
+  25% {
+    margin-left: -8vw;
+    margin-top: 48.66667vh; }
+  35% {
+    margin-left: 10vw;
+    margin-top: 41.66667vh; }
+  45% {
+    margin-left: -14vw;
+    margin-top: 18.66667vh; }
+  55% {
+    margin-left: -19vw;
+    margin-top: 24.66667vh; }
+  65% {
+    margin-left: -17vw;
+    margin-top: 51.66667vh; }
+  75% {
+    margin-left: -11vw;
+    margin-top: 54.66667vh; }
+  85% {
+    margin-left: -8vw;
+    margin-top: 33.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-seven-diamonds {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.seven.hearts {
     transform: rotateZ(-6deg);
-    animation-name: deal-seven-hearts;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-seven-hearts, deal-seven-hearts;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-seven-hearts {
+  5% {
+    margin-left: 6vw;
+    margin-top: 43.66667vh; }
+  15% {
+    margin-left: 12vw;
+    margin-top: 48.66667vh; }
+  25% {
+    margin-left: 11vw;
+    margin-top: 30.66667vh; }
+  35% {
+    margin-left: 13vw;
+    margin-top: 44.66667vh; }
+  45% {
+    margin-left: -24vw;
+    margin-top: 39.66667vh; }
+  55% {
+    margin-left: 7vw;
+    margin-top: 41.66667vh; }
+  65% {
+    margin-left: 14vw;
+    margin-top: 45.66667vh; }
+  75% {
+    margin-left: -24vw;
+    margin-top: 48.66667vh; }
+  85% {
+    margin-left: -3vw;
+    margin-top: 39.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-seven-hearts {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.seven.spades {
     transform: rotateZ(-3deg);
-    animation-name: deal-seven-spades;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-seven-spades, deal-seven-spades;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-seven-spades {
+  5% {
+    margin-left: 8vw;
+    margin-top: 31.66667vh; }
+  15% {
+    margin-left: -16vw;
+    margin-top: 48.66667vh; }
+  25% {
+    margin-left: -12vw;
+    margin-top: 38.66667vh; }
+  35% {
+    margin-left: -23vw;
+    margin-top: 48.66667vh; }
+  45% {
+    margin-left: -16vw;
+    margin-top: 49.66667vh; }
+  55% {
+    margin-left: -11vw;
+    margin-top: 39.66667vh; }
+  65% {
+    margin-left: -14vw;
+    margin-top: 31.66667vh; }
+  75% {
+    margin-left: -11vw;
+    margin-top: 53.66667vh; }
+  85% {
+    margin-left: -5vw;
+    margin-top: 31.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-seven-spades {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.eight.diamonds {
     transform: rotateZ(0deg);
-    animation-name: deal-eight-diamonds;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-eight-diamonds, deal-eight-diamonds;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-eight-diamonds {
+  5% {
+    margin-left: -17vw;
+    margin-top: 18.66667vh; }
+  15% {
+    margin-left: 6vw;
+    margin-top: 33.66667vh; }
+  25% {
+    margin-left: -18vw;
+    margin-top: 17.66667vh; }
+  35% {
+    margin-left: -12vw;
+    margin-top: 22.66667vh; }
+  45% {
+    margin-left: 1vw;
+    margin-top: 44.66667vh; }
+  55% {
+    margin-left: -6vw;
+    margin-top: 25.66667vh; }
+  65% {
+    margin-left: -23vw;
+    margin-top: 20.66667vh; }
+  75% {
+    margin-left: -9vw;
+    margin-top: 42.66667vh; }
+  85% {
+    margin-left: 14vw;
+    margin-top: 17.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-eight-diamonds {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.eight.hearts {
     transform: rotateZ(3deg);
-    animation-name: deal-eight-hearts;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-eight-hearts, deal-eight-hearts;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-eight-hearts {
+  5% {
+    margin-left: 13vw;
+    margin-top: 33.66667vh; }
+  15% {
+    margin-left: 6vw;
+    margin-top: 53.66667vh; }
+  25% {
+    margin-left: 15vw;
+    margin-top: 33.66667vh; }
+  35% {
+    margin-left: 5vw;
+    margin-top: 45.66667vh; }
+  45% {
+    margin-left: -13vw;
+    margin-top: 18.66667vh; }
+  55% {
+    margin-left: 15vw;
+    margin-top: 23.66667vh; }
+  65% {
+    margin-left: -5vw;
+    margin-top: 48.66667vh; }
+  75% {
+    margin-left: -9vw;
+    margin-top: 20.66667vh; }
+  85% {
+    margin-left: -15vw;
+    margin-top: 31.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-eight-hearts {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.eight.spades {
     transform: rotateZ(6deg);
-    animation-name: deal-eight-spades;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-eight-spades, deal-eight-spades;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-eight-spades {
+  5% {
+    margin-left: 4vw;
+    margin-top: 52.66667vh; }
+  15% {
+    margin-left: -9vw;
+    margin-top: 44.66667vh; }
+  25% {
+    margin-left: -2vw;
+    margin-top: 51.66667vh; }
+  35% {
+    margin-left: -1vw;
+    margin-top: 21.66667vh; }
+  45% {
+    margin-left: -22vw;
+    margin-top: 20.66667vh; }
+  55% {
+    margin-left: -10vw;
+    margin-top: 54.66667vh; }
+  65% {
+    margin-left: -7vw;
+    margin-top: 40.66667vh; }
+  75% {
+    margin-left: -18vw;
+    margin-top: 52.66667vh; }
+  85% {
+    margin-left: -23vw;
+    margin-top: 43.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-eight-spades {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.nine.diamonds {
     transform: rotateZ(9deg);
-    animation-name: deal-nine-diamonds;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-nine-diamonds, deal-nine-diamonds;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-nine-diamonds {
+  5% {
+    margin-left: 8vw;
+    margin-top: 30.66667vh; }
+  15% {
+    margin-left: -20vw;
+    margin-top: 55.66667vh; }
+  25% {
+    margin-left: -20vw;
+    margin-top: 20.66667vh; }
+  35% {
+    margin-left: -10vw;
+    margin-top: 52.66667vh; }
+  45% {
+    margin-left: 5vw;
+    margin-top: 41.66667vh; }
+  55% {
+    margin-left: -24vw;
+    margin-top: 45.66667vh; }
+  65% {
+    margin-left: -10vw;
+    margin-top: 21.66667vh; }
+  75% {
+    margin-left: -23vw;
+    margin-top: 47.66667vh; }
+  85% {
+    margin-left: -3vw;
+    margin-top: 44.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-nine-diamonds {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.nine.spades {
     transform: rotateZ(12deg);
-    animation-name: deal-nine-spades;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-nine-spades, deal-nine-spades;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-nine-spades {
+  5% {
+    margin-left: 4vw;
+    margin-top: 43.66667vh; }
+  15% {
+    margin-left: -23vw;
+    margin-top: 23.66667vh; }
+  25% {
+    margin-left: -4vw;
+    margin-top: 31.66667vh; }
+  35% {
+    margin-left: -19vw;
+    margin-top: 41.66667vh; }
+  45% {
+    margin-left: -17vw;
+    margin-top: 42.66667vh; }
+  55% {
+    margin-left: -4vw;
+    margin-top: 34.66667vh; }
+  65% {
+    margin-left: -14vw;
+    margin-top: 52.66667vh; }
+  75% {
+    margin-left: 7vw;
+    margin-top: 50.66667vh; }
+  85% {
+    margin-left: -1vw;
+    margin-top: 32.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-nine-spades {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.ten.diamonds {
     transform: rotateZ(15deg);
-    animation-name: deal-ten-diamonds;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-ten-diamonds, deal-ten-diamonds;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-ten-diamonds {
+  5% {
+    margin-left: 6vw;
+    margin-top: 55.66667vh; }
+  15% {
+    margin-left: 1vw;
+    margin-top: 41.66667vh; }
+  25% {
+    margin-left: -15vw;
+    margin-top: 48.66667vh; }
+  35% {
+    margin-left: 7vw;
+    margin-top: 33.66667vh; }
+  45% {
+    margin-left: -18vw;
+    margin-top: 24.66667vh; }
+  55% {
+    margin-left: 14vw;
+    margin-top: 41.66667vh; }
+  65% {
+    margin-left: 4vw;
+    margin-top: 53.66667vh; }
+  75% {
+    margin-left: 3vw;
+    margin-top: 28.66667vh; }
+  85% {
+    margin-left: 1vw;
+    margin-top: 45.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-ten-diamonds {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.ten.spades {
     transform: rotateZ(18deg);
-    animation-name: deal-ten-spades;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-ten-spades, deal-ten-spades;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-ten-spades {
+  5% {
+    margin-left: 10vw;
+    margin-top: 52.66667vh; }
+  15% {
+    margin-left: 10vw;
+    margin-top: 26.66667vh; }
+  25% {
+    margin-left: -19vw;
+    margin-top: 45.66667vh; }
+  35% {
+    margin-left: -14vw;
+    margin-top: 48.66667vh; }
+  45% {
+    margin-left: -16vw;
+    margin-top: 22.66667vh; }
+  55% {
+    margin-left: 10vw;
+    margin-top: 33.66667vh; }
+  65% {
+    margin-left: -4vw;
+    margin-top: 34.66667vh; }
+  75% {
+    margin-left: -20vw;
+    margin-top: 22.66667vh; }
+  85% {
+    margin-left: -2vw;
+    margin-top: 32.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-ten-spades {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.jack.diamonds {
     transform: rotateZ(21deg);
-    animation-name: deal-jack-diamonds;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-jack-diamonds, deal-jack-diamonds;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-jack-diamonds {
+  5% {
+    margin-left: 9vw;
+    margin-top: 43.66667vh; }
+  15% {
+    margin-left: 6vw;
+    margin-top: 48.66667vh; }
+  25% {
+    margin-left: 8vw;
+    margin-top: 45.66667vh; }
+  35% {
+    margin-left: -6vw;
+    margin-top: 26.66667vh; }
+  45% {
+    margin-left: -24vw;
+    margin-top: 20.66667vh; }
+  55% {
+    margin-left: 2vw;
+    margin-top: 41.66667vh; }
+  65% {
+    margin-left: 7vw;
+    margin-top: 25.66667vh; }
+  75% {
+    margin-left: -12vw;
+    margin-top: 30.66667vh; }
+  85% {
+    margin-left: -3vw;
+    margin-top: 27.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-jack-diamonds {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.queen.diamonds {
     transform: rotateZ(24deg);
-    animation-name: deal-queen-diamonds;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-queen-diamonds, deal-queen-diamonds;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-queen-diamonds {
+  5% {
+    margin-left: -17vw;
+    margin-top: 34.66667vh; }
+  15% {
+    margin-left: -23vw;
+    margin-top: 39.66667vh; }
+  25% {
+    margin-left: -18vw;
+    margin-top: 41.66667vh; }
+  35% {
+    margin-left: -23vw;
+    margin-top: 44.66667vh; }
+  45% {
+    margin-left: -7vw;
+    margin-top: 30.66667vh; }
+  55% {
+    margin-left: 6vw;
+    margin-top: 55.66667vh; }
+  65% {
+    margin-left: 15vw;
+    margin-top: 40.66667vh; }
+  75% {
+    margin-left: 2vw;
+    margin-top: 30.66667vh; }
+  85% {
+    margin-left: -12vw;
+    margin-top: 21.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-queen-diamonds {
   100% {
     transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.white.card {
     transform: rotateZ(27deg);
-    animation-name: deal-white-card;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3400ms; }
+    animation-name: shuffle-white-card, deal-white-card;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 0s, 7900ms; }
+@keyframes shuffle-white-card {
+  5% {
+    margin-left: -21vw;
+    margin-top: 45.66667vh; }
+  15% {
+    margin-left: -1vw;
+    margin-top: 41.66667vh; }
+  25% {
+    margin-left: 8vw;
+    margin-top: 17.66667vh; }
+  35% {
+    margin-left: -9vw;
+    margin-top: 40.66667vh; }
+  45% {
+    margin-left: -13vw;
+    margin-top: 21.66667vh; }
+  55% {
+    margin-left: -1vw;
+    margin-top: 52.66667vh; }
+  65% {
+    margin-left: 14vw;
+    margin-top: 46.66667vh; }
+  75% {
+    margin-left: -1vw;
+    margin-top: 22.66667vh; }
+  85% {
+    margin-left: -13vw;
+    margin-top: 41.66667vh; }
+  15% {
+    content: initial; }
+  25% {
+    content: initial; }
+  35% {
+    content: initial; }
+  45% {
+    content: initial; }
+  55% {
+    content: initial; }
+  65% {
+    content: initial; }
+  75% {
+    content: initial; }
+  85% {
+    content: initial; }
+  95% {
+    content: initial; } }
 @keyframes deal-white-card {
   100% {
     transform: rotateZ(0deg); } }
