@@ -22,23 +22,36 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="blackjack-view.css" rel="stylesheet" type="text/css" />
     <title>Blackjack</title>
 </head>
+<div id="game-container">
 <body>
     <br />
+    <div id="header">
     <h1>BlackJack</h1>
+    </div>
     <input type="checkbox" id="start" />
     <label for="start">Start</label>
 
 
     <!--Style the labels, leave the checkboxes alone. They will get checked when you click the label. See the start button-->
-    <label for="check-1">Hit</label>
-    <label for="check-2">Stay</label>
-    <label for="check-3">Hit</label>
-    <label for="check-4">Stay</label>
-    <label for="check-5">Hit</label>
+    <div id="player1">
+    <h1>P1</h1>
+        <label for="check-1">Hit</label>
+        <label for="check-2">Stay</label>
+    </div>
+    <div id="player2">
+        <h1>P2</h1>
+        <label for="check-3">Hit</label>
+        <label for="check-4">Stay</label>
+    </div>
+    <div id="player3">
+        <h1>P3</h1>
+        <label for="check-5">Hit</label>
+        <label for="check-7">Stay</label>
+    </div>
     <label for="check-6">Hit</label>
-    <label for="check-7">Stay</label>
 
     <!--Style the labels, leave the checkboxes alone. They will get checked when you click the label. See the start button-->
     <input type="checkbox" id="check-1" class="chk-button player2" />
@@ -72,4 +85,5 @@
         <!--<div class="card white card"></div>-->
     </div>
 </body>
+</div>
 </html>
