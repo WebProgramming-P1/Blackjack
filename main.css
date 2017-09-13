@@ -14,6 +14,105 @@ label[for=start] {
   right: 0;
   position: absolute; }
 
+label[for=check-1] {
+ padding: 5px 10px;
+ background: #000000;
+ border-radius: 5px;
+ width: 40px;
+ height: 10px;
+ text-align: center;
+ display: inline-block;
+ color: #FFFFFF;
+ margin: 50px;
+ top: -60px;
+ left: -10px;
+ position: relative; }
+
+label[for=check-2] {
+  padding: 5px 10px;
+  background: #cc0000;
+  border-radius: 5px;
+  width: 40px;
+  height: 10px;
+  text-align: center;
+  display: inline-block;
+  color: #FFFFFF;
+  margin: 50px;
+  top: -60px;
+  left: 40px;
+  position: relative; }
+
+label[for=check-3] {
+  padding: 5px 10px;
+  background: #000000;
+  border-radius: 5px;
+  width: 40px;
+  height: 10px;
+  text-align: center;
+  display: inline-block;
+  color: #FFFFFF;
+  margin: 50px;
+  left: 0;
+  bottom: 0;
+  position: relative; }
+
+label[for=check-4] {
+  padding: 5px 10px;
+  background: #cc0000;
+  border-radius: 5px;
+  width: 40px;
+  height: 10px;
+  text-align: center;
+  display: inline-block;
+  color: #FFFFFF;
+  margin: 50px;
+  right: 0;
+  bottom: 0;
+  position: relative; }
+
+label[for=check-5] {
+  padding: 5px 10px;
+  background: #000000;
+  border-radius: 5px;
+  width: 40px;
+  height: 10px;
+  text-align: center;
+  display: inline-block;
+  color: #FFFFFF;
+  margin: 50px;
+  top: -60px;
+  right: 30px;
+  position: relative; }
+
+/*not sure if this extra HIT was for the deck, styled to center, can change if necessary*/
+label[for=check-6] {
+  padding: 5px 10px;
+  background: #000000;
+  border-radius: 5px;
+  width: 40px;
+  height: 10px;
+  text-align: center;
+  display: inline-block;
+  color: #FFFFFF;
+  margin: 50px;
+  top: 0;
+  right: 600px;
+  position: absolute; }
+
+label[for=check-7] {
+  padding: 5px 10px;
+  background: #cc0000;
+  border-radius: 5px;
+  width: 40px;
+  height: 10px;
+  text-align: center;
+  display: inline-block;
+  color: #FFFFFF;
+  margin: 50px;
+  top: -60px;
+  right: -20px;
+  position: relative; }
+
 .cards {
   width: 100vw;
   text-align: center;
