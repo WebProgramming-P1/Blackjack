@@ -81,7 +81,7 @@ label[for=check-5] {
   color: #FFFFFF;
   margin: 50px;
   top: -60px;
-  right: 30px;
+  right: -130px;
   position: relative; }
 
 /*not sure if this extra HIT was for the deck, styled to center, can change if necessary*/
@@ -95,9 +95,9 @@ label[for=check-6] {
   display: inline-block;
   color: #FFFFFF;
   margin: 50px;
-  top: 0;
-  right: 600px;
-  position: absolute; }
+  top: -30px;
+  right: 30px;
+  position: relative; }
 
 label[for=check-7] {
   padding: 5px 10px;
@@ -110,7 +110,7 @@ label[for=check-7] {
   color: #FFFFFF;
   margin: 50px;
   top: -60px;
-  right: -20px;
+  right: -30px;
   position: relative; }
 
 .cards {
