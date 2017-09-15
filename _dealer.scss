@@ -5,7 +5,7 @@
 }
 
 @mixin incrementFrameBy($incVal, $emptyAlternatingFrame: false) {
-	$curVal : $incVal;
+	$curVal : $incVal + 5;
 	@while ($curVal <= 90) {
 		#{$curVal}% {
 			@content;
@@ -15,7 +15,7 @@
 			$curVal : $curVal + $incVal;
 		}
 	}
-	$curVal : $incVal;
+	$curVal : $incVal + 5;
 	@if ($emptyAlternatingFrame) {
 		@while ($curVal <= 90) {
 			$curVal : $curVal + ($incVal * 2);
@@ -83,6 +83,9 @@ label[for=start] {
 		height              : $cardHeight;
 		margin-left         : -$cardWidth;
 
+		border              : 3px solid black;
+		border-radius       : 10px;
+
 		background-position : center;
 		background-repeat   : no-repeat;
 		background-size     : cover;
@@ -112,6 +115,7 @@ label[for=start] {
 		~ {
 			$card-anim-1-duration : 1000;
 			$card-shuffle-anim-duration : 5000;
+			$card-shuffle-anim-delay : 1000;
 			$card-anim-2-duration : 1000;
 
 			*, .cards .card {
@@ -131,14 +135,15 @@ label[for=start] {
 				$value : #{nth($card, 1)};
 				$suit : #{nth($card, 2)};
 				.cards .card.#{$value}.#{$suit} {
+					z-index             : $index + 1;
 					transform           : rotateZ(#{$deg}deg);
 					animation-name      : shuffle-#{$value}-#{$suit}, deal-#{$value}-#{$suit};
 					animation-duration  : toMs($card-shuffle-anim-duration), toMs($card-anim-2-duration);
 					animation-fill-mode : none, forwards;
-					animation-delay     : 0s, toMs($card-shuffle-anim-duration + 500 + $delay);
+					animation-delay     : toMs($card-shuffle-anim-delay), toMs($card-shuffle-anim-duration + $card-shuffle-anim-delay + 500 + $delay);
 
 					@if ($index < 6) {
-						@if ($index % 3 == 0) {
+						@if ($index % 3 == 2) {
 							// Right
 							&:hover {
 								margin-left : -$cardWidth - 30px;
@@ -148,7 +153,7 @@ label[for=start] {
 							&:hover {
 								margin-top : -30px;
 							}
-						} @else if ($index % 3 == 2) {
+						} @else if ($index % 3 == 0) {
 							// Left
 							&:hover {
 								margin-left : (-$cardWidth + 30px);
@@ -165,24 +170,46 @@ label[for=start] {
 						margin-top  : #{random($shuffleAmount) - ($shuffleAmount / 3) + 30}vh;
 					}
 				}
-				@keyframes deal-#{$value}-#{$suit} {
-					100% {
-						@if ($index < 6) {
-							@if ($index % 3 == 0) {
-								// Right
-								@include rightDeck($deg);
-							} @else if ($index % 3 == 1) {
-								// Bottom
-								@include bottomDeck($deg);
-							} @else if ($index % 3 == 2) {
-								// Left
-								@include leftDeck($deg);
-							}
-						} @else {
-							transform : rotateZ(0deg);
+				//@if (length($cards) != $index) {
+					@keyframes deal-#{$value}-#{$suit} {
+						100% {
+							@if ($index < 6) {
+								@if ($index % 3 == 2) {
+									// Right
+									@include rightDeck($deg);
+								} @else if ($index % 3 == 1) {
+									// Bottom
+									@include bottomDeck($deg);
+								} @else if ($index % 3 == 0) {
+									// Left
+									@include leftDeck($deg);
+								}
+							} @else {
+								transform : rotateZ(0deg);
+							//}
 						}
 					}
 				}
+				//@if ($index >= 6) {
+				//	$offsetIndex : $index - 6;
+				//	$playerNum : ($offsetIndex % 3) + 1;
+				//	//$moveNum : ($playerNum % 3) + $offsetIndex;
+				//	$moveNum : floor($offsetIndex / 3) + 1;
+				//	@keyframes deal-player-#{$playerNum}-move-#{$moveNum} {
+				//		100% {
+				//			@if ($index % 3 == 2) {
+				//				// Right
+				//				@include rightDeck($deg);
+				//			} @else if ($index % 3 == 1) {
+				//				// Bottom
+				//				@include bottomDeck($deg);
+				//			} @else if ($index % 3 == 0) {
+				//				// Left
+				//				@include leftDeck($deg);
+				//			}
+				//		}
+				//	}
+				//}
 
 				$delay : $delay + $delayIncrement;
 				$deg : $deg + $degIncrement;
