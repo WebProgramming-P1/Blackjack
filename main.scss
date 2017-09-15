@@ -8,6 +8,55 @@
 	}
 }
 
+/*cases for when there is hit for the for 1 ,2 and 3 of the players*/
+/*when first hit is only selected*/
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+/*when second hit is only selected*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+/*when third hit is only selected*/
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+
+/*when only the first and second hit is selected*/
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked)~ #check-7:not(:checked) ~ .cards .card.nine.spades {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+/*when the first, second and third hit is selected*/
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
+	background-image : url("card_imgs/six_hearts.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.seven.diamonds {
+	background-image : url("card_imgs/seven_diamonds.jpg");
+}
+
+/*when the  second and third hit is selected*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
+	background-image: url("card_imgs/six_hearts.jpg");
+}
+
+/*when the first and third hit is selected*/
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked)~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
+	background-image: url("card_imgs/six_hearts.jpg");
+}
+
+
 /*Case 1*/
 #check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
 	background-image : url("card_imgs/nine_spades.jpg");

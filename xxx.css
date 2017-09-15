@@ -5,21 +5,26 @@ body{
     visibility: hidden;
 }
 
-/*cases for when there is hit for the first 2 hits*/
+/*cases for when there is hit for the for 1 ,2 and 3 of the players*/
 /*when first hit is only selected*/
 #check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
 	background-image : url("card_imgs/nine_spades.jpg");
 }
-/*when only the second hit is selected*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked)~ #check-7:not(:checked) ~ .cards .card.nine.spades {
+/*when second hit is only selected*/
+#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
 	background-image : url("card_imgs/nine_spades.jpg");
 }
+/*when third hit is only selected*/
+#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
+	background-image : url("card_imgs/nine_spades.jpg");
+}
+
 /*when only the first and second hit is selected*/
 #check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked)~ #check-7:not(:checked) ~ .cards .card.nine.spades {
 	background-image : url("card_imgs/nine_spades.jpg");
 }
 #check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/nine_spades.jpg");
+	background-image : url("card_imgs/six_hearts.jpg");
 }
 /*when the first, second and third hit is selected*/
 #check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
