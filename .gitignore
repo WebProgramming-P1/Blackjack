@@ -1,2 +1,4 @@
 .idea
 *.css.map
+.nogen_dir_structure
+card_imgs/index.html
