@@ -59,32 +59,32 @@ label[for=start] {
       margin-left: -70px; }
 @keyframes shuffle-seven-hearts {
   10% {
-    margin-left: -6vw;
-    margin-top: 38.66667vh; }
+    margin-left: 6vw;
+    margin-top: 26.66667vh; }
   20% {
-    margin-left: -21vw;
-    margin-top: 35.66667vh; }
+    margin-left: -3vw;
+    margin-top: 44.66667vh; }
   30% {
-    margin-left: -24vw;
-    margin-top: 52.66667vh; }
+    margin-left: -23vw;
+    margin-top: 55.66667vh; }
   40% {
-    margin-left: -16vw;
-    margin-top: 38.66667vh; }
+    margin-left: 13vw;
+    margin-top: 41.66667vh; }
   50% {
-    margin-left: -21vw;
-    margin-top: 51.66667vh; }
+    margin-left: -6vw;
+    margin-top: 20.66667vh; }
   60% {
-    margin-left: -5vw;
-    margin-top: 23.66667vh; }
+    margin-left: -14vw;
+    margin-top: 56.66667vh; }
   70% {
-    margin-left: 12vw;
-    margin-top: 19.66667vh; }
+    margin-left: -20vw;
+    margin-top: 25.66667vh; }
   80% {
     margin-left: -14vw;
-    margin-top: 33.66667vh; }
+    margin-top: 29.66667vh; }
   90% {
-    margin-left: 2vw;
-    margin-top: 52.66667vh; }
+    margin-left: -8vw;
+    margin-top: 55.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -119,32 +119,32 @@ label[for=start] {
       margin-top: -30px; }
 @keyframes shuffle-ten-diamonds {
   10% {
-    margin-left: 3vw;
-    margin-top: 24.66667vh; }
+    margin-left: -22vw;
+    margin-top: 47.66667vh; }
   20% {
     margin-left: -7vw;
-    margin-top: 34.66667vh; }
+    margin-top: 32.66667vh; }
   30% {
-    margin-left: 2vw;
-    margin-top: 36.66667vh; }
-  40% {
-    margin-left: -22vw;
-    margin-top: 22.66667vh; }
-  50% {
-    margin-left: -12vw;
-    margin-top: 28.66667vh; }
-  60% {
-    margin-left: 9vw;
-    margin-top: 49.66667vh; }
-  70% {
-    margin-left: -5vw;
-    margin-top: 29.66667vh; }
-  80% {
-    margin-left: -11vw;
-    margin-top: 44.66667vh; }
-  90% {
-    margin-left: 0vw;
+    margin-left: -23vw;
     margin-top: 40.66667vh; }
+  40% {
+    margin-left: -12vw;
+    margin-top: 27.66667vh; }
+  50% {
+    margin-left: 6vw;
+    margin-top: 53.66667vh; }
+  60% {
+    margin-left: -15vw;
+    margin-top: 26.66667vh; }
+  70% {
+    margin-left: -23vw;
+    margin-top: 54.66667vh; }
+  80% {
+    margin-left: 3vw;
+    margin-top: 31.66667vh; }
+  90% {
+    margin-left: 14vw;
+    margin-top: 25.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -179,32 +179,32 @@ label[for=start] {
       margin-left: -130px; }
 @keyframes shuffle-ten-spades {
   10% {
-    margin-left: -11vw;
-    margin-top: 31.66667vh; }
+    margin-left: 9vw;
+    margin-top: 18.66667vh; }
   20% {
-    margin-left: -2vw;
-    margin-top: 40.66667vh; }
-  30% {
-    margin-left: -5vw;
+    margin-left: -3vw;
     margin-top: 56.66667vh; }
+  30% {
+    margin-left: -18vw;
+    margin-top: 47.66667vh; }
   40% {
-    margin-left: -10vw;
-    margin-top: 44.66667vh; }
+    margin-left: 5vw;
+    margin-top: 28.66667vh; }
   50% {
-    margin-left: -19vw;
-    margin-top: 55.66667vh; }
+    margin-left: -12vw;
+    margin-top: 29.66667vh; }
   60% {
-    margin-left: -6vw;
-    margin-top: 39.66667vh; }
+    margin-left: 4vw;
+    margin-top: 21.66667vh; }
   70% {
     margin-left: -21vw;
-    margin-top: 21.66667vh; }
+    margin-top: 36.66667vh; }
   80% {
-    margin-left: -23vw;
-    margin-top: 22.66667vh; }
+    margin-left: -22vw;
+    margin-top: 24.66667vh; }
   90% {
-    margin-left: 2vw;
-    margin-top: 32.66667vh; }
+    margin-left: 3vw;
+    margin-top: 49.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -226,8 +226,8 @@ label[for=start] {
 @keyframes deal-ten-spades {
   100% {
     left: 90vw;
-    top: 50vh;
-    transform: rotateZ(86.31579deg); } }
+    top: 55vh;
+    transform: rotateZ(76.31579deg); } }
   #start:checked ~ .cards .card.jack.diamonds {
     z-index: 4;
     transform: rotateZ(-20.52632deg);
@@ -239,32 +239,32 @@ label[for=start] {
       margin-left: -70px; }
 @keyframes shuffle-jack-diamonds {
   10% {
-    margin-left: -17vw;
-    margin-top: 43.66667vh; }
+    margin-left: -13vw;
+    margin-top: 47.66667vh; }
   20% {
-    margin-left: -20vw;
-    margin-top: 32.66667vh; }
+    margin-left: -23vw;
+    margin-top: 27.66667vh; }
   30% {
-    margin-left: 1vw;
-    margin-top: 50.66667vh; }
+    margin-left: -4vw;
+    margin-top: 49.66667vh; }
   40% {
-    margin-left: -8vw;
-    margin-top: 35.66667vh; }
+    margin-left: 15vw;
+    margin-top: 33.66667vh; }
   50% {
-    margin-left: -8vw;
-    margin-top: 25.66667vh; }
+    margin-left: 13vw;
+    margin-top: 46.66667vh; }
   60% {
-    margin-left: 4vw;
+    margin-left: -19vw;
     margin-top: 24.66667vh; }
   70% {
-    margin-left: -23vw;
-    margin-top: 23.66667vh; }
-  80% {
-    margin-left: -22vw;
-    margin-top: 54.66667vh; }
-  90% {
     margin-left: -24vw;
-    margin-top: 53.66667vh; }
+    margin-top: 44.66667vh; }
+  80% {
+    margin-left: 0vw;
+    margin-top: 40.66667vh; }
+  90% {
+    margin-left: 0vw;
+    margin-top: 45.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -299,32 +299,32 @@ label[for=start] {
       margin-top: -30px; }
 @keyframes shuffle-seven-spades {
   10% {
-    margin-left: -21vw;
-    margin-top: 49.66667vh; }
+    margin-left: -20vw;
+    margin-top: 23.66667vh; }
   20% {
-    margin-left: 5vw;
-    margin-top: 37.66667vh; }
+    margin-left: 11vw;
+    margin-top: 49.66667vh; }
   30% {
-    margin-left: 2vw;
-    margin-top: 54.66667vh; }
+    margin-left: 15vw;
+    margin-top: 37.66667vh; }
   40% {
-    margin-left: -6vw;
-    margin-top: 51.66667vh; }
+    margin-left: 14vw;
+    margin-top: 23.66667vh; }
   50% {
-    margin-left: -17vw;
-    margin-top: 35.66667vh; }
+    margin-left: -13vw;
+    margin-top: 56.66667vh; }
   60% {
-    margin-left: -9vw;
+    margin-left: -11vw;
     margin-top: 46.66667vh; }
   70% {
-    margin-left: -17vw;
-    margin-top: 35.66667vh; }
+    margin-left: -2vw;
+    margin-top: 20.66667vh; }
   80% {
-    margin-left: -3vw;
-    margin-top: 43.66667vh; }
+    margin-left: -23vw;
+    margin-top: 32.66667vh; }
   90% {
-    margin-left: -10vw;
-    margin-top: 51.66667vh; }
+    margin-left: -9vw;
+    margin-top: 36.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -359,32 +359,32 @@ label[for=start] {
       margin-left: -130px; }
 @keyframes shuffle-five-hearts {
   10% {
-    margin-left: -4vw;
-    margin-top: 25.66667vh; }
-  20% {
-    margin-left: -1vw;
-    margin-top: 21.66667vh; }
-  30% {
-    margin-left: -10vw;
-    margin-top: 40.66667vh; }
-  40% {
-    margin-left: -9vw;
-    margin-top: 30.66667vh; }
-  50% {
-    margin-left: -20vw;
-    margin-top: 20.66667vh; }
-  60% {
-    margin-left: -12vw;
-    margin-top: 50.66667vh; }
-  70% {
     margin-left: -23vw;
-    margin-top: 17.66667vh; }
+    margin-top: 50.66667vh; }
+  20% {
+    margin-left: 15vw;
+    margin-top: 23.66667vh; }
+  30% {
+    margin-left: 11vw;
+    margin-top: 45.66667vh; }
+  40% {
+    margin-left: -22vw;
+    margin-top: 26.66667vh; }
+  50% {
+    margin-left: 9vw;
+    margin-top: 49.66667vh; }
+  60% {
+    margin-left: -4vw;
+    margin-top: 45.66667vh; }
+  70% {
+    margin-left: 4vw;
+    margin-top: 47.66667vh; }
   80% {
-    margin-left: -21vw;
-    margin-top: 20.66667vh; }
+    margin-left: -8vw;
+    margin-top: 36.66667vh; }
   90% {
-    margin-left: -18vw;
-    margin-top: 40.66667vh; }
+    margin-left: -10vw;
+    margin-top: 50.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -406,8 +406,8 @@ label[for=start] {
 @keyframes deal-five-hearts {
   100% {
     left: 90vw;
-    top: 50vh;
-    transform: rotateZ(95.78947deg); } }
+    top: 55vh;
+    transform: rotateZ(85.78947deg); } }
   #start:checked ~ .cards .card.nine.spades {
     z-index: 7;
     transform: rotateZ(-11.05263deg);
@@ -418,31 +418,31 @@ label[for=start] {
 @keyframes shuffle-nine-spades {
   10% {
     margin-left: -12vw;
-    margin-top: 29.66667vh; }
+    margin-top: 27.66667vh; }
   20% {
-    margin-left: -10vw;
-    margin-top: 33.66667vh; }
+    margin-left: -21vw;
+    margin-top: 35.66667vh; }
   30% {
-    margin-left: -8vw;
-    margin-top: 54.66667vh; }
+    margin-left: -1vw;
+    margin-top: 33.66667vh; }
   40% {
-    margin-left: 3vw;
-    margin-top: 18.66667vh; }
+    margin-left: -1vw;
+    margin-top: 27.66667vh; }
   50% {
-    margin-left: -5vw;
-    margin-top: 53.66667vh; }
+    margin-left: -14vw;
+    margin-top: 39.66667vh; }
   60% {
     margin-left: -12vw;
-    margin-top: 55.66667vh; }
+    margin-top: 47.66667vh; }
   70% {
-    margin-left: -8vw;
-    margin-top: 29.66667vh; }
+    margin-left: -20vw;
+    margin-top: 21.66667vh; }
   80% {
-    margin-left: -4vw;
-    margin-top: 30.66667vh; }
+    margin-left: -12vw;
+    margin-top: 55.66667vh; }
   90% {
-    margin-left: 14vw;
-    margin-top: 28.66667vh; }
+    margin-left: -4vw;
+    margin-top: 43.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -461,9 +461,6 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-nine-spades {
-  100% {
-    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.six.hearts {
     z-index: 8;
     transform: rotateZ(-7.89474deg);
@@ -473,32 +470,32 @@ label[for=start] {
     animation-delay: 1000ms, 8900ms; }
 @keyframes shuffle-six-hearts {
   10% {
-    margin-left: -9vw;
-    margin-top: 48.66667vh; }
-  20% {
-    margin-left: -8vw;
-    margin-top: 32.66667vh; }
-  30% {
-    margin-left: -23vw;
-    margin-top: 33.66667vh; }
-  40% {
-    margin-left: -10vw;
-    margin-top: 56.66667vh; }
-  50% {
-    margin-left: 3vw;
-    margin-top: 31.66667vh; }
-  60% {
-    margin-left: 4vw;
-    margin-top: 25.66667vh; }
-  70% {
-    margin-left: -3vw;
-    margin-top: 41.66667vh; }
-  80% {
-    margin-left: -24vw;
+    margin-left: 14vw;
     margin-top: 34.66667vh; }
-  90% {
+  20% {
+    margin-left: 12vw;
+    margin-top: 48.66667vh; }
+  30% {
     margin-left: 0vw;
-    margin-top: 20.66667vh; }
+    margin-top: 37.66667vh; }
+  40% {
+    margin-left: 0vw;
+    margin-top: 48.66667vh; }
+  50% {
+    margin-left: 0vw;
+    margin-top: 52.66667vh; }
+  60% {
+    margin-left: -23vw;
+    margin-top: 46.66667vh; }
+  70% {
+    margin-left: -22vw;
+    margin-top: 53.66667vh; }
+  80% {
+    margin-left: 0vw;
+    margin-top: 24.66667vh; }
+  90% {
+    margin-left: -12vw;
+    margin-top: 47.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -517,212 +514,41 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-six-hearts {
-  100% {
-    transform: rotateZ(0deg); } }
-  #start:checked ~ .cards .card.seven.diamonds {
+  #start:checked ~ .cards .card.three.cloves {
     z-index: 9;
     transform: rotateZ(-4.73684deg);
-    animation-name: shuffle-seven-diamonds, deal-seven-diamonds;
-    animation-duration: 5000ms, 1000ms;
-    animation-fill-mode: none, forwards;
-    animation-delay: 1000ms, 8900ms; }
-@keyframes shuffle-seven-diamonds {
-  10% {
-    margin-left: -17vw;
-    margin-top: 49.66667vh; }
-  20% {
-    margin-left: -12vw;
-    margin-top: 46.66667vh; }
-  30% {
-    margin-left: 12vw;
-    margin-top: 18.66667vh; }
-  40% {
-    margin-left: -9vw;
-    margin-top: 24.66667vh; }
-  50% {
-    margin-left: 0vw;
-    margin-top: 18.66667vh; }
-  60% {
-    margin-left: -8vw;
-    margin-top: 31.66667vh; }
-  70% {
-    margin-left: 2vw;
-    margin-top: 23.66667vh; }
-  80% {
-    margin-left: -10vw;
-    margin-top: 30.66667vh; }
-  90% {
-    margin-left: 13vw;
-    margin-top: 49.66667vh; }
-  20% {
-    content: initial; }
-  30% {
-    content: initial; }
-  40% {
-    content: initial; }
-  50% {
-    content: initial; }
-  60% {
-    content: initial; }
-  70% {
-    content: initial; }
-  80% {
-    content: initial; }
-  90% {
-    content: initial; }
-  100% {
-    content: initial; } }
-@keyframes deal-seven-diamonds {
-  100% {
-    transform: rotateZ(0deg); } }
-  #start:checked ~ .cards .card.eight.spades {
-    z-index: 10;
-    transform: rotateZ(-1.57895deg);
-    animation-name: shuffle-eight-spades, deal-eight-spades;
-    animation-duration: 5000ms, 1000ms;
-    animation-fill-mode: none, forwards;
-    animation-delay: 1000ms, 8900ms; }
-@keyframes shuffle-eight-spades {
-  10% {
-    margin-left: -3vw;
-    margin-top: 50.66667vh; }
-  20% {
-    margin-left: 14vw;
-    margin-top: 22.66667vh; }
-  30% {
-    margin-left: -23vw;
-    margin-top: 34.66667vh; }
-  40% {
-    margin-left: -5vw;
-    margin-top: 55.66667vh; }
-  50% {
-    margin-left: -20vw;
-    margin-top: 26.66667vh; }
-  60% {
-    margin-left: -5vw;
-    margin-top: 33.66667vh; }
-  70% {
-    margin-left: -19vw;
-    margin-top: 42.66667vh; }
-  80% {
-    margin-left: 0vw;
-    margin-top: 33.66667vh; }
-  90% {
-    margin-left: -24vw;
-    margin-top: 39.66667vh; }
-  20% {
-    content: initial; }
-  30% {
-    content: initial; }
-  40% {
-    content: initial; }
-  50% {
-    content: initial; }
-  60% {
-    content: initial; }
-  70% {
-    content: initial; }
-  80% {
-    content: initial; }
-  90% {
-    content: initial; }
-  100% {
-    content: initial; } }
-@keyframes deal-eight-spades {
-  100% {
-    transform: rotateZ(0deg); } }
-  #start:checked ~ .cards .card.two.cloves {
-    z-index: 11;
-    transform: rotateZ(1.57895deg);
-    animation-name: shuffle-two-cloves, deal-two-cloves;
-    animation-duration: 5000ms, 1000ms;
-    animation-fill-mode: none, forwards;
-    animation-delay: 1000ms, 8900ms; }
-@keyframes shuffle-two-cloves {
-  10% {
-    margin-left: -4vw;
-    margin-top: 21.66667vh; }
-  20% {
-    margin-left: -22vw;
-    margin-top: 47.66667vh; }
-  30% {
-    margin-left: -13vw;
-    margin-top: 49.66667vh; }
-  40% {
-    margin-left: 3vw;
-    margin-top: 47.66667vh; }
-  50% {
-    margin-left: 13vw;
-    margin-top: 21.66667vh; }
-  60% {
-    margin-left: -16vw;
-    margin-top: 54.66667vh; }
-  70% {
-    margin-left: -20vw;
-    margin-top: 54.66667vh; }
-  80% {
-    margin-left: -13vw;
-    margin-top: 53.66667vh; }
-  90% {
-    margin-left: -6vw;
-    margin-top: 47.66667vh; }
-  20% {
-    content: initial; }
-  30% {
-    content: initial; }
-  40% {
-    content: initial; }
-  50% {
-    content: initial; }
-  60% {
-    content: initial; }
-  70% {
-    content: initial; }
-  80% {
-    content: initial; }
-  90% {
-    content: initial; }
-  100% {
-    content: initial; } }
-@keyframes deal-two-cloves {
-  100% {
-    transform: rotateZ(0deg); } }
-  #start:checked ~ .cards .card.three.cloves {
-    z-index: 12;
-    transform: rotateZ(4.73684deg);
     animation-name: shuffle-three-cloves, deal-three-cloves;
     animation-duration: 5000ms, 1000ms;
     animation-fill-mode: none, forwards;
     animation-delay: 1000ms, 8900ms; }
 @keyframes shuffle-three-cloves {
   10% {
-    margin-left: -8vw;
-    margin-top: 49.66667vh; }
+    margin-left: -3vw;
+    margin-top: 54.66667vh; }
   20% {
-    margin-left: 13vw;
-    margin-top: 44.66667vh; }
+    margin-left: 1vw;
+    margin-top: 25.66667vh; }
   30% {
     margin-left: -3vw;
-    margin-top: 36.66667vh; }
+    margin-top: 45.66667vh; }
   40% {
-    margin-left: -18vw;
-    margin-top: 54.66667vh; }
+    margin-left: 1vw;
+    margin-top: 50.66667vh; }
   50% {
-    margin-left: 0vw;
-    margin-top: 18.66667vh; }
-  60% {
-    margin-left: 2vw;
+    margin-left: -20vw;
     margin-top: 41.66667vh; }
-  70% {
-    margin-left: -14vw;
-    margin-top: 32.66667vh; }
-  80% {
-    margin-left: 6vw;
-    margin-top: 34.66667vh; }
-  90% {
+  60% {
     margin-left: 0vw;
-    margin-top: 49.66667vh; }
+    margin-top: 24.66667vh; }
+  70% {
+    margin-left: 8vw;
+    margin-top: 34.66667vh; }
+  80% {
+    margin-left: 2vw;
+    margin-top: 27.66667vh; }
+  90% {
+    margin-left: -5vw;
+    margin-top: 37.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -741,9 +567,165 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-three-cloves {
+  #start:checked ~ .cards .card.seven.diamonds {
+    z-index: 10;
+    transform: rotateZ(-1.57895deg);
+    animation-name: shuffle-seven-diamonds, deal-seven-diamonds;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 1000ms, 8900ms; }
+@keyframes shuffle-seven-diamonds {
+  10% {
+    margin-left: 14vw;
+    margin-top: 24.66667vh; }
+  20% {
+    margin-left: 9vw;
+    margin-top: 49.66667vh; }
+  30% {
+    margin-left: -17vw;
+    margin-top: 43.66667vh; }
+  40% {
+    margin-left: -7vw;
+    margin-top: 31.66667vh; }
+  50% {
+    margin-left: 3vw;
+    margin-top: 45.66667vh; }
+  60% {
+    margin-left: 13vw;
+    margin-top: 51.66667vh; }
+  70% {
+    margin-left: -1vw;
+    margin-top: 26.66667vh; }
+  80% {
+    margin-left: -15vw;
+    margin-top: 26.66667vh; }
+  90% {
+    margin-left: 3vw;
+    margin-top: 45.66667vh; }
+  20% {
+    content: initial; }
+  30% {
+    content: initial; }
+  40% {
+    content: initial; }
+  50% {
+    content: initial; }
+  60% {
+    content: initial; }
+  70% {
+    content: initial; }
+  80% {
+    content: initial; }
+  90% {
+    content: initial; }
   100% {
-    transform: rotateZ(0deg); } }
+    content: initial; } }
+  #start:checked ~ .cards .card.eight.spades {
+    z-index: 11;
+    transform: rotateZ(1.57895deg);
+    animation-name: shuffle-eight-spades, deal-eight-spades;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 1000ms, 8900ms; }
+@keyframes shuffle-eight-spades {
+  10% {
+    margin-left: -10vw;
+    margin-top: 34.66667vh; }
+  20% {
+    margin-left: -24vw;
+    margin-top: 28.66667vh; }
+  30% {
+    margin-left: 14vw;
+    margin-top: 37.66667vh; }
+  40% {
+    margin-left: -19vw;
+    margin-top: 47.66667vh; }
+  50% {
+    margin-left: 11vw;
+    margin-top: 31.66667vh; }
+  60% {
+    margin-left: 10vw;
+    margin-top: 28.66667vh; }
+  70% {
+    margin-left: -10vw;
+    margin-top: 54.66667vh; }
+  80% {
+    margin-left: 9vw;
+    margin-top: 50.66667vh; }
+  90% {
+    margin-left: -16vw;
+    margin-top: 29.66667vh; }
+  20% {
+    content: initial; }
+  30% {
+    content: initial; }
+  40% {
+    content: initial; }
+  50% {
+    content: initial; }
+  60% {
+    content: initial; }
+  70% {
+    content: initial; }
+  80% {
+    content: initial; }
+  90% {
+    content: initial; }
+  100% {
+    content: initial; } }
+  #start:checked ~ .cards .card.two.cloves {
+    z-index: 12;
+    transform: rotateZ(4.73684deg);
+    animation-name: shuffle-two-cloves, deal-two-cloves;
+    animation-duration: 5000ms, 1000ms;
+    animation-fill-mode: none, forwards;
+    animation-delay: 1000ms, 8900ms; }
+@keyframes shuffle-two-cloves {
+  10% {
+    margin-left: 3vw;
+    margin-top: 47.66667vh; }
+  20% {
+    margin-left: 6vw;
+    margin-top: 45.66667vh; }
+  30% {
+    margin-left: 7vw;
+    margin-top: 19.66667vh; }
+  40% {
+    margin-left: 8vw;
+    margin-top: 48.66667vh; }
+  50% {
+    margin-left: -10vw;
+    margin-top: 27.66667vh; }
+  60% {
+    margin-left: 1vw;
+    margin-top: 47.66667vh; }
+  70% {
+    margin-left: -2vw;
+    margin-top: 34.66667vh; }
+  80% {
+    margin-left: -13vw;
+    margin-top: 42.66667vh; }
+  90% {
+    margin-left: 5vw;
+    margin-top: 44.66667vh; }
+  20% {
+    content: initial; }
+  30% {
+    content: initial; }
+  40% {
+    content: initial; }
+  50% {
+    content: initial; }
+  60% {
+    content: initial; }
+  70% {
+    content: initial; }
+  80% {
+    content: initial; }
+  90% {
+    content: initial; }
+  100% {
+    content: initial; } }
   #start:checked ~ .cards .card.four.cloves {
     z-index: 13;
     transform: rotateZ(7.89474deg);
@@ -753,32 +735,32 @@ label[for=start] {
     animation-delay: 1000ms, 8900ms; }
 @keyframes shuffle-four-cloves {
   10% {
-    margin-left: -20vw;
-    margin-top: 46.66667vh; }
+    margin-left: -8vw;
+    margin-top: 56.66667vh; }
   20% {
-    margin-left: -23vw;
-    margin-top: 35.66667vh; }
+    margin-left: 9vw;
+    margin-top: 42.66667vh; }
   30% {
-    margin-left: -14vw;
-    margin-top: 39.66667vh; }
+    margin-left: 0vw;
+    margin-top: 51.66667vh; }
   40% {
-    margin-left: -22vw;
+    margin-left: -23vw;
     margin-top: 52.66667vh; }
   50% {
-    margin-left: -11vw;
-    margin-top: 40.66667vh; }
+    margin-left: -22vw;
+    margin-top: 24.66667vh; }
   60% {
-    margin-left: -12vw;
-    margin-top: 35.66667vh; }
+    margin-left: -13vw;
+    margin-top: 22.66667vh; }
   70% {
-    margin-left: -19vw;
-    margin-top: 20.66667vh; }
+    margin-left: -13vw;
+    margin-top: 29.66667vh; }
   80% {
-    margin-left: 5vw;
-    margin-top: 34.66667vh; }
+    margin-left: -4vw;
+    margin-top: 42.66667vh; }
   90% {
-    margin-left: 14vw;
-    margin-top: 53.66667vh; }
+    margin-left: 0vw;
+    margin-top: 26.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -797,9 +779,6 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-four-cloves {
-  100% {
-    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.four.hearts {
     z-index: 14;
     transform: rotateZ(11.05263deg);
@@ -809,32 +788,32 @@ label[for=start] {
     animation-delay: 1000ms, 8900ms; }
 @keyframes shuffle-four-hearts {
   10% {
-    margin-left: 12vw;
-    margin-top: 41.66667vh; }
-  20% {
-    margin-left: -15vw;
-    margin-top: 28.66667vh; }
-  30% {
-    margin-left: 6vw;
-    margin-top: 45.66667vh; }
-  40% {
-    margin-left: 11vw;
-    margin-top: 50.66667vh; }
-  50% {
-    margin-left: -12vw;
-    margin-top: 18.66667vh; }
-  60% {
-    margin-left: -19vw;
+    margin-left: 4vw;
     margin-top: 22.66667vh; }
+  20% {
+    margin-left: 11vw;
+    margin-top: 54.66667vh; }
+  30% {
+    margin-left: -16vw;
+    margin-top: 44.66667vh; }
+  40% {
+    margin-left: 15vw;
+    margin-top: 21.66667vh; }
+  50% {
+    margin-left: -10vw;
+    margin-top: 22.66667vh; }
+  60% {
+    margin-left: -18vw;
+    margin-top: 56.66667vh; }
   70% {
-    margin-left: -4vw;
-    margin-top: 31.66667vh; }
+    margin-left: 15vw;
+    margin-top: 30.66667vh; }
   80% {
-    margin-left: -15vw;
-    margin-top: 51.66667vh; }
+    margin-left: -1vw;
+    margin-top: 48.66667vh; }
   90% {
-    margin-left: -5vw;
-    margin-top: 47.66667vh; }
+    margin-left: 4vw;
+    margin-top: 26.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -853,9 +832,6 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-four-hearts {
-  100% {
-    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.six.diamonds {
     z-index: 15;
     transform: rotateZ(14.21053deg);
@@ -865,32 +841,32 @@ label[for=start] {
     animation-delay: 1000ms, 8900ms; }
 @keyframes shuffle-six-diamonds {
   10% {
-    margin-left: -1vw;
-    margin-top: 49.66667vh; }
+    margin-left: -19vw;
+    margin-top: 21.66667vh; }
   20% {
-    margin-left: -6vw;
-    margin-top: 20.66667vh; }
+    margin-left: -4vw;
+    margin-top: 52.66667vh; }
   30% {
-    margin-left: 14vw;
-    margin-top: 20.66667vh; }
+    margin-left: -9vw;
+    margin-top: 33.66667vh; }
   40% {
-    margin-left: -3vw;
-    margin-top: 26.66667vh; }
+    margin-left: 2vw;
+    margin-top: 22.66667vh; }
   50% {
-    margin-left: -1vw;
-    margin-top: 55.66667vh; }
-  60% {
-    margin-left: -21vw;
-    margin-top: 35.66667vh; }
-  70% {
-    margin-left: 6vw;
+    margin-left: -2vw;
     margin-top: 49.66667vh; }
+  60% {
+    margin-left: 7vw;
+    margin-top: 22.66667vh; }
+  70% {
+    margin-left: 5vw;
+    margin-top: 56.66667vh; }
   80% {
-    margin-left: 15vw;
-    margin-top: 43.66667vh; }
+    margin-left: 5vw;
+    margin-top: 48.66667vh; }
   90% {
-    margin-left: -23vw;
-    margin-top: 40.66667vh; }
+    margin-left: -20vw;
+    margin-top: 45.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -909,9 +885,6 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-six-diamonds {
-  100% {
-    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.eight.hearts {
     z-index: 16;
     transform: rotateZ(17.36842deg);
@@ -921,32 +894,32 @@ label[for=start] {
     animation-delay: 1000ms, 8900ms; }
 @keyframes shuffle-eight-hearts {
   10% {
-    margin-left: -13vw;
-    margin-top: 27.66667vh; }
+    margin-left: -22vw;
+    margin-top: 49.66667vh; }
   20% {
-    margin-left: -19vw;
-    margin-top: 47.66667vh; }
+    margin-left: 2vw;
+    margin-top: 38.66667vh; }
   30% {
-    margin-left: 11vw;
-    margin-top: 40.66667vh; }
+    margin-left: 3vw;
+    margin-top: 41.66667vh; }
   40% {
-    margin-left: -3vw;
-    margin-top: 19.66667vh; }
+    margin-left: -20vw;
+    margin-top: 49.66667vh; }
   50% {
-    margin-left: 12vw;
-    margin-top: 39.66667vh; }
+    margin-left: -10vw;
+    margin-top: 26.66667vh; }
   60% {
-    margin-left: -24vw;
-    margin-top: 31.66667vh; }
+    margin-left: 10vw;
+    margin-top: 46.66667vh; }
   70% {
-    margin-left: -14vw;
-    margin-top: 43.66667vh; }
+    margin-left: -18vw;
+    margin-top: 29.66667vh; }
   80% {
-    margin-left: -12vw;
-    margin-top: 56.66667vh; }
+    margin-left: -11vw;
+    margin-top: 21.66667vh; }
   90% {
-    margin-left: -13vw;
-    margin-top: 35.66667vh; }
+    margin-left: 4vw;
+    margin-top: 30.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -965,9 +938,6 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-eight-hearts {
-  100% {
-    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.eight.diamonds {
     z-index: 17;
     transform: rotateZ(20.52632deg);
@@ -977,32 +947,32 @@ label[for=start] {
     animation-delay: 1000ms, 8900ms; }
 @keyframes shuffle-eight-diamonds {
   10% {
-    margin-left: -11vw;
-    margin-top: 36.66667vh; }
+    margin-left: -15vw;
+    margin-top: 25.66667vh; }
   20% {
-    margin-left: 8vw;
-    margin-top: 23.66667vh; }
-  30% {
-    margin-left: 6vw;
-    margin-top: 19.66667vh; }
-  40% {
-    margin-left: 14vw;
-    margin-top: 50.66667vh; }
-  50% {
-    margin-left: -16vw;
-    margin-top: 53.66667vh; }
-  60% {
-    margin-left: -20vw;
-    margin-top: 53.66667vh; }
-  70% {
     margin-left: -8vw;
-    margin-top: 26.66667vh; }
+    margin-top: 56.66667vh; }
+  30% {
+    margin-left: -18vw;
+    margin-top: 53.66667vh; }
+  40% {
+    margin-left: 12vw;
+    margin-top: 55.66667vh; }
+  50% {
+    margin-left: 2vw;
+    margin-top: 47.66667vh; }
+  60% {
+    margin-left: 11vw;
+    margin-top: 49.66667vh; }
+  70% {
+    margin-left: -9vw;
+    margin-top: 48.66667vh; }
   80% {
-    margin-left: 0vw;
-    margin-top: 23.66667vh; }
+    margin-left: 10vw;
+    margin-top: 17.66667vh; }
   90% {
-    margin-left: -7vw;
-    margin-top: 18.66667vh; }
+    margin-left: 11vw;
+    margin-top: 45.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -1021,9 +991,6 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-eight-diamonds {
-  100% {
-    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.nine.diamonds {
     z-index: 18;
     transform: rotateZ(23.68421deg);
@@ -1033,32 +1000,32 @@ label[for=start] {
     animation-delay: 1000ms, 8900ms; }
 @keyframes shuffle-nine-diamonds {
   10% {
-    margin-left: -2vw;
-    margin-top: 34.66667vh; }
+    margin-left: -9vw;
+    margin-top: 39.66667vh; }
   20% {
-    margin-left: 15vw;
-    margin-top: 47.66667vh; }
+    margin-left: -20vw;
+    margin-top: 40.66667vh; }
   30% {
-    margin-left: -2vw;
-    margin-top: 18.66667vh; }
+    margin-left: -10vw;
+    margin-top: 35.66667vh; }
   40% {
-    margin-left: 12vw;
-    margin-top: 46.66667vh; }
+    margin-left: 15vw;
+    margin-top: 21.66667vh; }
   50% {
-    margin-left: 3vw;
-    margin-top: 18.66667vh; }
-  60% {
-    margin-left: 7vw;
-    margin-top: 53.66667vh; }
-  70% {
-    margin-left: 0vw;
-    margin-top: 30.66667vh; }
-  80% {
-    margin-left: -3vw;
+    margin-left: -23vw;
     margin-top: 17.66667vh; }
+  60% {
+    margin-left: -17vw;
+    margin-top: 36.66667vh; }
+  70% {
+    margin-left: 12vw;
+    margin-top: 21.66667vh; }
+  80% {
+    margin-left: 12vw;
+    margin-top: 44.66667vh; }
   90% {
-    margin-left: 1vw;
-    margin-top: 33.66667vh; }
+    margin-left: -19vw;
+    margin-top: 45.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -1077,9 +1044,6 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-nine-diamonds {
-  100% {
-    transform: rotateZ(0deg); } }
   #start:checked ~ .cards .card.queen.diamonds {
     z-index: 19;
     transform: rotateZ(26.84211deg);
@@ -1089,32 +1053,32 @@ label[for=start] {
     animation-delay: 1000ms, 8900ms; }
 @keyframes shuffle-queen-diamonds {
   10% {
-    margin-left: -18vw;
-    margin-top: 18.66667vh; }
-  20% {
     margin-left: 7vw;
-    margin-top: 47.66667vh; }
+    margin-top: 45.66667vh; }
+  20% {
+    margin-left: 12vw;
+    margin-top: 21.66667vh; }
   30% {
-    margin-left: -14vw;
-    margin-top: 50.66667vh; }
-  40% {
-    margin-left: -16vw;
-    margin-top: 37.66667vh; }
-  50% {
-    margin-left: -9vw;
+    margin-left: 11vw;
     margin-top: 35.66667vh; }
+  40% {
+    margin-left: -9vw;
+    margin-top: 54.66667vh; }
+  50% {
+    margin-left: 2vw;
+    margin-top: 45.66667vh; }
   60% {
-    margin-left: 0vw;
-    margin-top: 22.66667vh; }
+    margin-left: -8vw;
+    margin-top: 34.66667vh; }
   70% {
-    margin-left: -2vw;
-    margin-top: 41.66667vh; }
+    margin-left: 12vw;
+    margin-top: 55.66667vh; }
   80% {
-    margin-left: -11vw;
-    margin-top: 25.66667vh; }
+    margin-left: -8vw;
+    margin-top: 35.66667vh; }
   90% {
-    margin-left: -2vw;
-    margin-top: 42.66667vh; }
+    margin-left: 0vw;
+    margin-top: 18.66667vh; }
   20% {
     content: initial; }
   30% {
@@ -1133,356 +1097,140 @@ label[for=start] {
     content: initial; }
   100% {
     content: initial; } }
-@keyframes deal-queen-diamonds {
-  100% {
-    transform: rotateZ(0deg); } }
   #start:checked ~ label[for=start] {
     opacity: 0;
     top: -1000%; }
 
-label[for=check-1] {
+label[for].for-chk-btn {
   padding: 5px 10px;
-  background: #000000;
   border-radius: 5px;
   width: 40px;
-  height: 10px;
+  height: 20px;
+  line-height: 20px;
   text-align: center;
-  display: inline-block;
   color: #FFFFFF;
-  margin: 50px;
-  top: -60px;
-  left: -10px;
-  position: relative; }
+  opacity: 1; }
 
-label[for=check-2] {
-  padding: 5px 10px;
-  background: #CC0000;
-  border-radius: 5px;
-  width: 40px;
-  height: 10px;
-  text-align: center;
+label.hit-btn {
+  background: #000000; }
+
+label.hit-btn:before {
+  content: 'Hit'; }
+
+label.stay-btn:before {
+  content: 'Stay'; }
+
+label.busted {
+  color: #000000 !important;
+  font-weight: bolder;
+  display: none; }
+  label.busted:before {
+    content: 'Busted'; }
+
+label.stay-btn {
+  background: #CC0000; }
+
+.stack-btns * {
+  position: absolute;
   display: inline-block;
-  color: #FFFFFF;
-  margin: 50px;
-  top: -60px;
-  left: 40px;
-  position: relative; }
+  text-align: center; }
 
-label[for=check-3] {
-  padding: 5px 10px;
-  background: #000000;
-  border-radius: 5px;
-  width: 40px;
-  height: 10px;
-  text-align: center;
-  display: inline-block;
-  color: #FFFFFF;
-  margin: 50px;
-  left: 0;
-  bottom: 0;
-  position: relative; }
+#check-1:checked ~ #visible-playing-field .stack-btns label[for=check-1]:not(:first-of-type) {
+  display: none; }
 
-label[for=check-4] {
-  padding: 5px 10px;
-  background: #CC0000;
-  border-radius: 5px;
-  width: 40px;
-  height: 10px;
-  text-align: center;
-  display: inline-block;
-  color: #FFFFFF;
-  margin: 50px;
-  right: 0;
-  bottom: 0;
-  position: relative; }
+#check-2:checked ~ #visible-playing-field .stack-btns label[for=check-2]:not(:first-of-type) {
+  display: none; }
 
-label[for=check-5] {
-  padding: 5px 10px;
-  background: #000000;
-  border-radius: 5px;
-  width: 40px;
-  height: 10px;
-  text-align: center;
-  display: inline-block;
-  color: #FFFFFF;
-  margin: 50px;
-  top: -60px;
-  right: -130px;
-  position: relative; }
+#check-3:checked ~ #visible-playing-field .stack-btns label[for=check-3]:not(:first-of-type) {
+  display: none; }
 
-/*not sure if this extra HIT was for the deck, styled to center, can change if necessary*/
-label[for=check-6] {
-  padding: 5px 10px;
-  background: #000000;
-  border-radius: 5px;
-  width: 40px;
-  height: 10px;
-  text-align: center;
-  display: inline-block;
-  color: #FFFFFF;
-  margin: 50px;
-  top: -30px;
-  right: 30px;
-  position: relative; }
+#check-4:checked ~ #visible-playing-field .stack-btns label[for=check-4]:not(:first-of-type) {
+  display: none; }
 
-label[for=check-7] {
-  padding: 5px 10px;
-  background: #CC0000;
-  border-radius: 5px;
-  width: 40px;
-  height: 10px;
-  text-align: center;
-  display: inline-block;
-  color: #FFFFFF;
-  margin: 50px;
-  top: -60px;
-  right: -30px;
-  position: relative; }
+#check-5:checked ~ #visible-playing-field .stack-btns label[for=check-5]:not(:first-of-type) {
+  display: none; }
 
-.chk-button:checked {
-  visibility: hidden; }
+#check-6:checked ~ #visible-playing-field .stack-btns label[for=check-6]:not(:first-of-type) {
+  display: none; }
+
+#check-7:checked ~ #visible-playing-field .stack-btns label[for=check-7]:not(:first-of-type) {
+  display: none; }
 
 /*cases for when there is hit for the for 1 ,2 and 3 of the players*/
 /*when first hit is only selected*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
+#check-1:checked ~ #visible-playing-field #player1 .busted {
+  display: block; }
+#check-1:checked ~ .cards .card.nine.spades {
+  left: 10vw;
+  top: 50vh;
+  transform: rotateZ(280deg); }
 
-/*when second hit is only selected*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
+#check-2:checked ~ #visible-playing-field #player1 label[for]:not(.busted) {
+  display: none; }
 
-/*when third hit is only selected*/
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
+#check-4:checked ~ #visible-playing-field #player2 label[for]:not(.busted) {
+  display: none; }
 
-/*when only the first and second hit is selected*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
+#check-7:checked ~ #visible-playing-field #player3 label[for]:not(.busted) {
+  display: none; }
 
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
+#check-2:not(:checked) ~ #visible-playing-field #player2 label[for] {
+  display: none; }
 
-/*when the first, second and third hit is selected*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
+#check-4:not(:checked) ~ #visible-playing-field #player3 label[for] {
+  display: none; }
 
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
+#check-3:checked ~ #visible-playing-field #player2 .busted {
+  display: block; }
+#check-3:checked ~ .cards .card.six.hearts {
+  left: 50vw;
+  top: 90vh;
+  transform: rotateZ(190deg); }
 
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.seven.diamonds {
-  background-image: url("card_imgs/seven_diamonds.jpg"); }
+#check-5:checked ~ .cards .card.three.cloves {
+  left: 90vw;
+  top: 55vh;
+  transform: rotateZ(95deg); }
 
-/*when the  second and third hit is selected*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
+#check-6:checked ~ #visible-playing-field #player3 .busted {
+  display: block; }
+#check-6:checked ~ .cards .card.seven.diamonds {
+  left: 90vw;
+  top: 55vh;
+  transform: rotateZ(105deg); }
 
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
+#check-7:checked ~ #visible-playing-field {
+  opacity: 0; }
+#check-7:checked ~ #check-1:checked ~ #check-3:checked ~ #check-6:not(:checked) ~ #player3-wins {
+  font-size: 7vw; }
+#check-7:checked ~ #check-1:checked ~ #check-3:checked ~ #check-6:checked ~ #player2-wins {
+  font-size: 7vw; }
+#check-7:checked ~ #check-1:checked ~ #check-3:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #player3-wins {
+  font-size: 7vw; }
+#check-7:checked ~ #check-1:checked ~ #check-3:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #player2-wins {
+  font-size: 7vw; }
+#check-7:checked ~ #check-1:checked ~ #check-3:not(:checked) ~ #check-5:not(:checked) ~ #player2-wins {
+  font-size: 7vw; }
+#check-7:checked ~ #check-1:not(:checked) ~ #check-3:checked ~ #check-5:checked ~ #player3-wins {
+  font-size: 7vw; }
+#check-7:checked ~ #check-1:not(:checked) ~ #check-3:checked ~ #check-5:not(:checked) ~ #player1-wins {
+  font-size: 7vw; }
+#check-7:checked ~ #check-1:not(:checked) ~ #check-3:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #player3-wins {
+  font-size: 7vw; }
+#check-7:checked ~ #check-1:not(:checked) ~ #check-3:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #player1-2-wins {
+  font-size: 7vw; }
+#check-7:checked ~ #check-1:not(:checked) ~ #check-3:not(:checked) ~ #check-5:not(:checked) ~ #player3-wins {
+  font-size: 7vw; }
 
-/*when the first and third hit is selected*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
+.wins {
+  position: absolute;
+  width: 95vw;
+  height: 100vh;
+  float: left;
+  text-align: center;
+  top: 35vh;
+  font-size: 0; }
 
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
-
-/*Case 1*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.seven.diamonds {
-  background-image: url("card_imgs/seven_diamonds.jpg"); }
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.eight.spades {
-  background-image: url("card_imgs/eight_spades.jpg"); }
-
-/*Case 2*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.seven.diamonds {
-  background-image: url("card_imgs/seven_diamonds.jpg"); }
-
-/*Case 3 & 4*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
-
-/*Case 5*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.seven.diamonds {
-  background-image: url("card_imgs/seven_diamonds.jpg"); }
-
-/*Case 6*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
-
-/*Case 7 and 8 */
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-/*Case 9*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.seven.diamonds {
-  background-image: url("card_imgs/seven_diamonds.jpg"); }
-
-/*Case 10*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
-
-/*Case 11 and 12*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-/*Case 13*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-  background-image: url("card_imgs/six_hearts.jpg"); }
-
-/*Case 14*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-  background-image: url("card_imgs/nine_spades.jpg"); }
-
-/*Case 15 nothing*/
-/*Case 16 nothing*/
-/*Case 1*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
-  background-image: url("card_imgs/nine_diamonds.jpg"); }
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 2*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
-  background: darkseagreen none; }
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
-  background: darkorange none; }
-
-/*----------------------------*/
-/*Case 3*/
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 4*/
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 5*/
-#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 6*/
-#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 7*/
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 8*/
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 9*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 10*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 11*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 12*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 13*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 14*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 15*/
-#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
-/*Case 16*/
-#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.spades {
-  background: blue none; }
-#check-1:checked ~ #check-2:checked ~ #check-3:checked ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:checked ~ .cards .card.diamonds {
-  background: pink none; }
-
-/*----------------------------*/
 /*Card Backgrounds*/
 .cards .card.seven.hearts {
   background-image: url("card_imgs/seven_hearts.jpg"); }
@@ -1500,14 +1248,14 @@ label[for=check-7] {
   background-image: url("card_imgs/nine_spades.jpg"); }
 .cards .card.six.hearts {
   background-image: url("card_imgs/six_hearts.jpg"); }
+.cards .card.three.cloves {
+  background-image: url("card_imgs/three_cloves.jpg"); }
 .cards .card.seven.diamonds {
   background-image: url("card_imgs/seven_diamonds.jpg"); }
 .cards .card.eight.spades {
   background-image: url("card_imgs/eight_spades.jpg"); }
 .cards .card.two.cloves {
   background-image: url("card_imgs/two_cloves.jpg"); }
-.cards .card.three.cloves {
-  background-image: url("card_imgs/three_cloves.jpg"); }
 .cards .card.four.cloves {
   background-image: url("card_imgs/four_cloves.jpg"); }
 .cards .card.four.hearts {

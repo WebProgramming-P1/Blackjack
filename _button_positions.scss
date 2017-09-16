@@ -1,105 +1,73 @@
-label[for=check-1] {
+label[for].for-chk-btn {
+	//position      : relative;
 	padding       : 5px 10px;
-	background    : #000000;
 	border-radius : 5px;
 	width         : 40px;
-	height        : 10px;
+	height        : 20px;
+	line-height   : 20px;
 	text-align    : center;
-	display       : inline-block;
 	color         : #FFFFFF;
-	margin        : 50px;
-	top           : -60px;
-	left          : -10px;
-	position      : relative;
+	opacity       : 1;
 }
 
-label[for=check-2] {
-	padding       : 5px 10px;
-	background    : #CC0000;
-	border-radius : 5px;
-	width         : 40px;
-	height        : 10px;
-	text-align    : center;
-	display       : inline-block;
-	color         : #FFFFFF;
-	margin        : 50px;
-	top           : -60px;
-	left          : 40px;
-	position      : relative;
+label.hit-btn {
+	background : #000000;
 }
 
-label[for=check-3] {
-	padding       : 5px 10px;
-	background    : #000000;
-	border-radius : 5px;
-	width         : 40px;
-	height        : 10px;
-	text-align    : center;
-	display       : inline-block;
-	color         : #FFFFFF;
-	margin        : 50px;
-	left          : 0;
-	bottom        : 0;
-	position      : relative;
+label.hit-btn:before {
+	content : 'Hit';
 }
 
-label[for=check-4] {
-	padding       : 5px 10px;
-	background    : #CC0000;
-	border-radius : 5px;
-	width         : 40px;
-	height        : 10px;
-	text-align    : center;
-	display       : inline-block;
-	color         : #FFFFFF;
-	margin        : 50px;
-	right         : 0;
-	bottom        : 0;
-	position      : relative;
+label.stay-btn:before {
+	content : 'Stay';
 }
 
-label[for=check-5] {
-	padding       : 5px 10px;
-	background    : #000000;
-	border-radius : 5px;
-	width         : 40px;
-	height        : 10px;
-	text-align    : center;
-	display       : inline-block;
-	color         : #FFFFFF;
-	margin        : 50px;
-	top           : -60px;
-	right         : -130px;
-	position      : relative;
+label.busted {
+	color       : #000000 !important;
+	font-weight : bolder;
+	display     : none;
+
+	&:before {
+		content : 'Busted';
+	}
 }
 
-/*not sure if this extra HIT was for the deck, styled to center, can change if necessary*/
-label[for=check-6] {
-	padding       : 5px 10px;
-	background    : #000000;
-	border-radius : 5px;
-	width         : 40px;
-	height        : 10px;
-	text-align    : center;
-	display       : inline-block;
-	color         : #FFFFFF;
-	margin        : 50px;
-	top           : -30px;
-	right         : 30px;
-	position      : relative;
+label.stay-btn {
+	background : #CC0000;
 }
 
-label[for=check-7] {
-	padding       : 5px 10px;
-	background    : #CC0000;
-	border-radius : 5px;
-	width         : 40px;
-	height        : 10px;
-	text-align    : center;
-	display       : inline-block;
-	color         : #FFFFFF;
-	margin        : 50px;
-	top           : -60px;
-	right         : -30px;
-	position      : relative;
+.stack-btns {
+	& * {
+		position   : absolute;
+		display    : inline-block;
+		text-align : center;
+	}
+}
+
+#check-1:checked ~ #visible-playing-field .stack-btns label[for=check-1]:not(:first-of-type) {
+	display : none;
+}
+
+#check-2:checked ~ #visible-playing-field .stack-btns label[for=check-2]:not(:first-of-type) {
+	display : none;
+}
+
+#check-3:checked ~ #visible-playing-field .stack-btns label[for=check-3]:not(:first-of-type) {
+	display : none;
+}
+
+#check-4:checked ~ #visible-playing-field .stack-btns label[for=check-4]:not(:first-of-type) {
+	display : none;
+}
+
+#check-5:checked ~ #visible-playing-field .stack-btns label[for=check-5]:not(:first-of-type) {
+	display : none;
+}
+
+#check-6:checked ~ #visible-playing-field .stack-btns label[for=check-6]:not(:first-of-type) {
+	display : none;
+}
+
+#check-7:checked ~ #visible-playing-field .stack-btns label[for=check-7]:not(:first-of-type) {
+	display : none;
 }

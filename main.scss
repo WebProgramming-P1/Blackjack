@@ -4,601 +4,132 @@
 
 .chk-button {
 	&:checked {
-		visibility : hidden;
+		//visibility : hidden;
+	}
+}
+
+@mixin hidePlayerBtns($checkbox, $player) {
+	##{$checkbox}:checked ~ #visible-playing-field #player#{$player} label[for] {
+		&:not(.busted) {
+			display : none;
+		}
+	}
+}
+
+@mixin hidePlayerBtnsUntilChecked($checkbox, $player) {
+	##{$checkbox}:not(:checked) ~ #visible-playing-field #player#{$player} label[for] {
+		//&:not(.busted) {
+		display : none;
+		//}
+	}
+}
+
+@mixin showBusted($player) {
+	#visible-playing-field #player#{$player} .busted {
+		display : block;
+	}
+}
+
+@mixin playerWins($player) {
+	#player#{$player}-wins {
+		font-size : 7vw;
 	}
 }
 
 /*cases for when there is hit for the for 1 ,2 and 3 of the players*/
 /*when first hit is only selected*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
+#check-1:checked ~ {
+	@include showBusted(1);
+	.cards .card.nine.spades {
+		@include leftDeck(-10);
+	}
 }
 
-/*when second hit is only selected*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
+@include hidePlayerBtns("check-2", 1);
+@include hidePlayerBtns("check-4", 2);
+@include hidePlayerBtns("check-7", 3);
+@include hidePlayerBtnsUntilChecked("check-2", 2);
+@include hidePlayerBtnsUntilChecked("check-4", 3);
+
+#check-3:checked ~ {
+	@include showBusted(2);
+	.cards .card.six.hearts {
+		@include bottomDeck(-10);
+	}
 }
 
-/*when third hit is only selected*/
-#check-1:checked ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
+#check-5:checked ~ .cards .card.three.cloves {
+	@include rightDeck(-5);
 }
 
-/*when only the first and second hit is selected*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
+#check-6:checked ~ {
+	@include showBusted(3);
+	.cards .card.seven.diamonds {
+		@include rightDeck(5);
+	}
 }
 
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-/*when the first, second and third hit is selected*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.seven.diamonds {
-	background-image : url("card_imgs/seven_diamonds.jpg");
-}
-
-/*when the  second and third hit is selected*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-/*when the first and third hit is selected*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-/*Case 1*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.seven.diamonds {
-	background-image : url("card_imgs/seven_diamonds.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.eight.spades {
-	background-image : url("card_imgs/eight_spades.jpg");
-}
-
-/*Case 2*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.seven.diamonds {
-	background-image : url("card_imgs/seven_diamonds.jpg");
-}
-
-/*Case 3 & 4*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-/*Case 5*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.seven.diamonds {
-	background-image : url("card_imgs/seven_diamonds.jpg");
-}
-
-/*Case 6*/
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-/*Case 7 and 8 */
-#check-1:checked ~ #check-2:not(:checked) ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-/*Case 9*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.seven.diamonds {
-	background-image : url("card_imgs/seven_diamonds.jpg");
-}
-
-/*Case 10*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-/*Case 11 and 12*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:checked ~ #check-4:not(:checked) ~ #check-5:not(:checked) ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-/*Case 13*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:checked ~ #check-7:not(:checked) ~ .cards .card.six.hearts {
-	background-image : url("card_imgs/six_hearts.jpg");
-}
-
-/*Case 14*/
-#check-1:not(:checked) ~ #check-2:checked ~ #check-3:not(:checked) ~ #check-4:checked ~ #check-5:checked ~ #check-6:not(:checked) ~ #check-7:checked ~ .cards .card.nine.spades {
-	background-image : url("card_imgs/nine_spades.jpg");
-}
-
-/*Case 15 nothing*/
-/*Case 16 nothing*/
-/*Case 1*/
-#check-1:not(:checked) {
-	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:checked {
-				~ #check-5:not(:checked) {
-					~ #check-6:not(:checked) {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background-image : url("card_imgs/nine_diamonds.jpg");
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
+#check-7:checked ~ {
+	#visible-playing-field {
+		opacity : 0;
+	}
+	#check-1:checked ~ {
+		#check-3:checked ~ {
+			#check-6:not(:checked) ~ {
+				@include playerWins(3);
+			}
+			#check-6:checked ~ {
+				@include playerWins(2);
+			}
+		}
+		#check-3:not(:checked) ~ {
+			#check-5:checked ~ {
+				#check-6:not(:checked) ~ {
+					@include playerWins(3);
 				}
+				#check-6:checked ~ {
+					@include playerWins(2);
+				}
+			}
+			#check-5:not(:checked) ~ {
+				@include playerWins(2);
+			}
+		}
+	}
+	#check-1:not(:checked) ~ {
+		#check-3:checked ~ {
+			#check-5:checked ~ {
+				@include playerWins(3);
+			}
+			#check-5:not(:checked) ~ {
+				@include playerWins(1);
+			}
+		}
+		#check-3:not(:checked) ~ {
+			#check-5:checked ~ {
+				#check-6:not(:checked) ~ {
+					@include playerWins(3);
+				}
+				#check-6:checked ~ {
+					@include playerWins("1-2");
+				}
+			}
+			#check-5:not(:checked) ~ {
+				@include playerWins(3);
 			}
 		}
 	}
 }
 
-/*----------------------------*/
-
-/*Case 2*/
-
-#check-1:not(:checked) {
-	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:checked {
-				~ #check-5:not(:checked) {
-					~ #check-6:checked {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : darkseagreen none;
-								}
-								&.diamonds {
-									background : darkorange none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+.wins {
+	position   : absolute;
+	width      : 95vw;
+	height     : 100vh;
+	float      : left;
+	text-align : center;
+	top        : 35vh;
+	font-size  : 0;
 }
-
-/*----------------------------*/
-
-/*Case 3*/
-
-#check-1:checked {
-	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:checked {
-				~ #check-5:not(:checked) {
-					~ #check-6:not(:checked) {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-/*Case 4*/
-
-#check-1:checked {
-	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:checked {
-				~ #check-5:not(:checked) {
-					~ #check-6:checked {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 5*/
-
-#check-1:checked {
-	~ #check-2:checked {
-		~ #check-3:checked {
-			~ #check-4:checked {
-				~ #check-5:not(:checked) {
-					~ #check-6:not(:checked) {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 6*/
-
-#check-1:checked {
-	~ #check-2:checked {
-		~ #check-3:checked {
-			~ #check-4:checked {
-				~ #check-5:not(:checked) {
-					~ #check-6:checked {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 7*/
-
-#check-1:checked {
-	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 8*/
-
-#check-1:checked {
-	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:checked {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-/*Case 9*/
-#check-1:not(:checked) {
-	~ #check-2:checked {
-		~ #check-3:checked {
-			~ #check-4:checked {
-				~ #check-5:not(:checked) {
-					~ #check-6:not(:checked) {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 10*/
-
-#check-1:not(:checked) {
-	~ #check-2:checked {
-		~ #check-3:checked {
-			~ #check-4:checked {
-				~ #check-5:not(:checked) {
-					~ #check-6:checked {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 11*/
-
-#check-1:not(:checked) {
-	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-/*Case 12*/
-
-#check-1:not(:checked) {
-	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:checked {
-				~ #check-5:not(:checked) {
-					~ #check-6:not(:checked) {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 13*/
-
-#check-1:not(:checked) {
-	~ #check-2:checked {
-		~ #check-3:not(:checked) {
-			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:checked {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 14*/
-
-#check-1:not(:checked) {
-	~ #check-2:checked {
-		~ #check-3:checked {
-			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:checked {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 15*/
-
-#check-1:checked {
-	~ #check-2:checked {
-		~ #check-3:checked {
-			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:not(:checked) {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
-
-/*Case 16*/
-
-#check-1:checked {
-	~ #check-2:checked {
-		~ #check-3:checked {
-			~ #check-4:checked {
-				~ #check-5:checked {
-					~ #check-6:checked {
-						~ #check-7:checked {
-							~ .cards .card {
-								&.spades {
-									background : blue none;
-								}
-								&.diamonds {
-									background : pink none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/*----------------------------*/
 
 /*Card Backgrounds*/
 .cards {

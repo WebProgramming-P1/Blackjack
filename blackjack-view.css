@@ -1,39 +1,64 @@
 body {
-    width: 95%;
-    height: auto;
+	margin          : 0;
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	height          : 100vh;
 }
 
 #header {
-    padding: 5px;
-    overflow: auto;
-    top: 0;
+	padding : 5px;
+	margin  : 2%;
 }
 
 #game-container {
-    border: 3px black dashed;
-    padding: 20px;
-    position: relative;
-    top: 30px;
+	border   : 3px black dashed;
+	position : relative;
+	width    : 95vw;
+	height   : 95vh;
 }
 
-#player1 {
-    border: 3px black dashed;
-    position: absolute;
-    top: 250px;
-    left: 0;
+#visible-playing-field {
+	display         : flex;
+	justify-content : space-between;
+	align-items     : center;
+	flex-direction  : column;
+	bottom          : 0;
+	position        : absolute;
+	width           : 100%;
+	margin          : 0;
+	padding         : 0;
+	opacity         : 1;
+	transition      : opacity 1s ease;
 }
 
-#player2 {
-    border: 3px black dashed;
-    position: absolute;
-    left: 470px;
-    bottom: -500px;
-    overflow: auto;
+.player {
+	width           : 400px;
+	height          : 300px;
+	margin          : 1%;
+	padding         : 1%;
+	display         : flex;
+	justify-content : space-evenly;
 }
 
-#player3 {
-    border: 3px black dashed;
-    position: absolute;
-    top: 250px;
-    right: 0;
+.player h1 {
+	margin      : 0;
+	line-height : 1em;
+}
+
+.player-parent {
+	width   : 100%;
+	display : flex;
+}
+
+#player-row-1 {
+	justify-content : space-between;
+}
+
+#player-row-2 {
+	justify-content : center;
+}
+
+.chk-button {
+	display : none
 }

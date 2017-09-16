@@ -25,65 +25,95 @@
     <link href="blackjack-view.css" rel="stylesheet" type="text/css" />
     <title>Blackjack</title>
 </head>
-<div id="game-container">
 <body>
-    <br />
-    <div id="header">
-    <h1>BlackJack</h1>
-    </div>
-    <input type="checkbox" id="start" />
-    <label for="start">Start</label>
+    <div id="game-container">
+        <br />
+        <div id="header">
+            <h1>BlackJack</h1>
+        </div>
+        <input type="checkbox" id="start" />
+        <label for="start">Start</label>
 
+        <input type="checkbox" id="nothing" class="chk-button" />
+        <!--Style the labels, leave the checkboxes alone. They will get checked when you click the label. See the start button-->
 
-    <!--Style the labels, leave the checkboxes alone. They will get checked when you click the label. See the start button-->
-    <div id="player1">
-    <h1>P1</h1>
-        <label for="check-1">Hit</label>
-        <label for="check-2">Stay</label>
-    </div>
-    <div id="player2">
-        <h1>P2</h1>
-        <label for="check-3">Hit</label>
-        <label for="check-4">Stay</label>
-    </div>
-    <div id="player3">
-        <h1>P3</h1>
-        <label for="check-5">Hit</label>
-        <label for="check-6">Hit</label>
-        <label for="check-7">Stay</label>
-    </div>
+        <input type="checkbox" id="check-7" class="chk-button" />
 
-    <!--Style the labels, leave the checkboxes alone. They will get checked when you click the label. See the start button-->
-    <input type="checkbox" id="check-1" class="chk-button player2" />
-    <input type="checkbox" id="check-2" class="chk-button player3" />
-    <input type="checkbox" id="check-3" class="chk-button player1" />
-    <input type="checkbox" id="check-4" class="chk-button player2" />
-    <input type="checkbox" id="check-5" class="chk-button player3" />
-    <input type="checkbox" id="check-6" class="chk-button player1" />
-    <input type="checkbox" id="check-7" class="chk-button player2" />
+        <input type="checkbox" id="check-1" class="chk-button" />
+        <input type="checkbox" id="check-2" class="chk-button" />
+        <input type="checkbox" id="check-3" class="chk-button" />
+        <input type="checkbox" id="check-4" class="chk-button" />
+        <input type="checkbox" id="check-5" class="chk-button" />
+        <input type="checkbox" id="check-6" class="chk-button" />
 
-    <div class="cards">
-        <div class="card two cloves"></div>
-        <div class="card three cloves"></div>
-        <div class="card four cloves"></div>
-        <div class="card four hearts"></div>
-        <div class="card five hearts"></div>
-        <div class="card six diamonds"></div>
-        <div class="card six hearts"></div>
-        <div class="card seven diamonds"></div>
-        <div class="card seven hearts"></div>
-        <div class="card seven spades"></div>
-        <div class="card eight diamonds"></div>
-        <div class="card eight hearts"></div>
-        <div class="card eight spades"></div>
-        <div class="card nine diamonds"></div>
-        <div class="card nine spades"></div>
-        <div class="card ten diamonds"></div>
-        <div class="card ten spades"></div>
-        <div class="card jack diamonds"></div>
-        <div class="card queen diamonds"></div>
-        <!--<div class="card white card"></div>-->
+        <h1 id="player1-2-wins" class="wins">Draw! P1 &amp; P2 win!</h1>
+        <h1 id="player1-wins" class="wins">Player 1 wins!</h1>
+        <h1 id="player2-wins" class="wins">Player 2 wins!</h1>
+        <h1 id="player3-wins" class="wins">Player 3 wins!</h1>
+
+        <div id="visible-playing-field">
+            <div id="player-row-1" class="player-parent">
+                <div id="player1" class="player">
+                    <h1>P1</h1>
+                    <div class="stack-btns">
+                        <label for="nothing" class="for-chk-btn busted"></label>
+                        <label for="check-1" class="for-chk-btn hit-btn"></label>
+                    </div>
+                    <div class="stack-btns">
+                        <label for="nothing" class="for-chk-btn stay-btn"></label>
+                        <label for="check-2" class="for-chk-btn stay-btn"></label>
+                    </div>
+                </div>
+                <div id="player3" class="player">
+                    <h1>P3</h1>
+                    <div class="stack-btns">
+                        <label for="nothing" class="for-chk-btn busted"></label>
+                        <label for="check-6" class="for-chk-btn hit-btn"></label>
+                        <label for="check-5" class="for-chk-btn hit-btn"></label>
+                    </div>
+                    <div class="stack-btns">
+                        <label for="nothing" class="for-chk-btn stay-btn"></label>
+                        <label for="check-7" class="for-chk-btn stay-btn"></label>
+                    </div>
+                </div>
+            </div>
+            <div id="player-row-2" class="player-parent">
+                <div id="player2" class="player">
+                    <h1>P2</h1>
+                    <div class="stack-btns">
+                        <label for="nothing" class="for-chk-btn busted"></label>
+                        <label for="check-3" class="for-chk-btn hit-btn"></label>
+                    </div>
+                    <div class="stack-btns">
+                        <label for="nothing" class="for-chk-btn stay-btn"></label>
+                        <label for="check-4" class="for-chk-btn stay-btn"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card two cloves"></div>
+            <div class="card three cloves"></div>
+            <div class="card four cloves"></div>
+            <div class="card four hearts"></div>
+            <div class="card five hearts"></div>
+            <div class="card six diamonds"></div>
+            <div class="card six hearts"></div>
+            <div class="card seven diamonds"></div>
+            <div class="card seven hearts"></div>
+            <div class="card seven spades"></div>
+            <div class="card eight diamonds"></div>
+            <div class="card eight hearts"></div>
+            <div class="card eight spades"></div>
+            <div class="card nine diamonds"></div>
+            <div class="card nine spades"></div>
+            <div class="card ten diamonds"></div>
+            <div class="card ten spades"></div>
+            <div class="card jack diamonds"></div>
+            <div class="card queen diamonds"></div>
+            <!--<div class="card white card"></div>-->
+        </div>
     </div>
 </body>
-</div>
 </html>

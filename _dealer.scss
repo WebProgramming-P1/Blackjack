@@ -31,8 +31,8 @@ $deckRotationOffset : 20;
 
 @mixin rightDeck($deg) {
 	left      : 90vw;
-	top       : 50vh;
-	transform : rotateZ(#{$deg + 90 + $deckRotationOffset}deg);
+	top       : 55vh;
+	transform : rotateZ(#{$deg + 80 + $deckRotationOffset}deg);
 }
 
 @mixin bottomDeck($deg) {
@@ -171,25 +171,26 @@ label[for=start] {
 					}
 				}
 				//@if (length($cards) != $index) {
-					@keyframes deal-#{$value}-#{$suit} {
-						100% {
-							@if ($index < 6) {
-								@if ($index % 3 == 2) {
-									// Right
-									@include rightDeck($deg);
-								} @else if ($index % 3 == 1) {
-									// Bottom
-									@include bottomDeck($deg);
-								} @else if ($index % 3 == 0) {
-									// Left
-									@include leftDeck($deg);
-								}
-							} @else {
-								transform : rotateZ(0deg);
-							//}
+				@keyframes deal-#{$value}-#{$suit} {
+					100% {
+						@if ($index < 6) {
+							@if ($index % 3 == 2) {
+								// Right
+								@include rightDeck($deg);
+							} @else if ($index % 3 == 1) {
+								// Bottom
+								@include bottomDeck($deg);
+							} @else if ($index % 3 == 0) {
+								// Left
+								@include leftDeck($deg);
+							}
+						} @else {
+							//transform : rotateZ(0deg);
 						}
 					}
 				}
+				//}
+
 				//@if ($index >= 6) {
 				//	$offsetIndex : $index - 6;
 				//	$playerNum : ($offsetIndex % 3) + 1;
