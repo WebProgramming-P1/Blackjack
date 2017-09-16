@@ -111,12 +111,17 @@ label[for=start] {
 		}
 	}
 
+	$card-anim-1-duration : 1000;
+	$card-shuffle-anim-duration : 5000;
+	$card-shuffle-anim-delay : 1000;
+	$card-anim-2-duration : 1000;
+
+	$delay : 0;
+	$delayIncrement : 400;
+	$index : 0;
+
 	&:checked {
 		~ {
-			$card-anim-1-duration : 1000;
-			$card-shuffle-anim-duration : 5000;
-			$card-shuffle-anim-delay : 1000;
-			$card-anim-2-duration : 1000;
 
 			*, .cards .card {
 				opacity                    : 1;
@@ -128,9 +133,6 @@ label[for=start] {
 				transition : all 1s ease 0s, top 0s ease toMs($card-anim-1-duration), opacity toMs($card-anim-1-duration) ease 0s;
 			}
 
-			$delay : 0;
-			$delayIncrement : 400;
-			$index : 0;
 			@each $card in $cards {
 				$value : #{nth($card, 1)};
 				$suit : #{nth($card, 2)};
@@ -216,11 +218,19 @@ label[for=start] {
 				$deg : $deg + $degIncrement;
 				$index : $index + 1;
 			}
+			#visible-playing-field #player1 label[for] {
+				opacity : 1;
+			}
 
 			label[for=start] {
 				opacity : 0;
 				top     : -1000%;
 			}
 		}
+	}
+
+	& ~ #visible-playing-field #player1 label[for] {
+		opacity    : 0;
+		transition : opacity 1s ease toMs($card-shuffle-anim-duration + $card-shuffle-anim-delay + 1500 + $delay)
 	}
 }

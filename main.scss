@@ -18,9 +18,7 @@
 
 @mixin hidePlayerBtnsUntilChecked($checkbox, $player) {
 	##{$checkbox}:not(:checked) ~ #visible-playing-field #player#{$player} label[for] {
-		//&:not(.busted) {
 		display : none;
-		//}
 	}
 }
 
